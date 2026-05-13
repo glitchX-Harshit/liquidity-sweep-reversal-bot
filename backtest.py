@@ -115,7 +115,7 @@ def run_backtest(start_date: datetime, end_date: datetime, visualize: bool, expo
     # 5. Reports
     if export_report:
         logger.info("Generating reports...")
-        report_gen.generate_html(metrics, config)
+        report_gen.generate_html(metrics, config, trades_df=trades_df, start_date=start_date, end_date=end_date)
         report_gen.generate_pdf() # Will output placeholder message
 
     logger.info("Backtesting pipeline finished successfully.")

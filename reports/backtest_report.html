@@ -13,39 +13,92 @@
                 .container { display: flex; flex-wrap: wrap; }
                 .chart-container { margin-top: 30px; }
                 img { max-width: 100%; border: 1px solid #333; border-radius: 8px; }
+                .heatmap { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; margin-bottom: 30px; }
+                .heatmap-day { width: 30px; height: 30px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #fff; cursor: pointer; }
+                .day-profit { background-color: #2e7d32; }
+                .day-loss { background-color: #c62828; }
+                .day-neutral { background-color: #333333; }
             </style>
         </head>
         <body>
             <h1>Backtest Report: XAUUSD</h1>
-            <p>Generated on: 2026-05-13 14:57:15</p>
+            <p>Generated on: 2026-05-13 17:38:34</p>
             
             <h2>Key Metrics</h2>
             <div class="container">
                 <div class="metric-box">
                     <div class="metric-title">Total Return</div>
-                    <div class="metric-value positive">22.68%</div>
+                    <div class="metric-value positive">12.68%</div>
                 </div>
                 <div class="metric-box">
                     <div class="metric-title">Win Rate</div>
-                    <div class="metric-value">24.2%</div>
+                    <div class="metric-value">25.8%</div>
                 </div>
                 <div class="metric-box">
                     <div class="metric-title">Profit Factor</div>
-                    <div class="metric-value">1.84</div>
+                    <div class="metric-value">1.95</div>
                 </div>
                 <div class="metric-box">
                     <div class="metric-title">Max Drawdown</div>
-                    <div class="metric-value negative">6.05%</div>
+                    <div class="metric-value negative">5.18%</div>
                 </div>
                 <div class="metric-box">
                     <div class="metric-title">Total Trades</div>
-                    <div class="metric-value">62</div>
+                    <div class="metric-value">31</div>
                 </div>
                 <div class="metric-box">
                     <div class="metric-title">Sharpe Ratio</div>
-                    <div class="metric-value">3.28</div>
+                    <div class="metric-value">4.57</div>
                 </div>
             </div>
+            
+            <h2>Daily PnL Heatmap</h2>
+<div class='heatmap'>
+<div class='heatmap-day day-neutral' title='2026-04-01: $0.00'>1</div>
+<div class='heatmap-day day-neutral' title='2026-04-02: $0.00'>2</div>
+<div class='heatmap-day day-neutral' title='2026-04-03: $0.00'>3</div>
+<div class='heatmap-day day-neutral' title='2026-04-04: $0.00'>4</div>
+<div class='heatmap-day day-neutral' title='2026-04-05: $0.00'>5</div>
+<div class='heatmap-day day-neutral' title='2026-04-06: $0.00'>6</div>
+<div class='heatmap-day day-profit' title='2026-04-07: $612.32'>7</div>
+<div class='heatmap-day day-profit' title='2026-04-08: $124.58'>8</div>
+<div class='heatmap-day day-neutral' title='2026-04-09: $0.00'>9</div>
+<div class='heatmap-day day-neutral' title='2026-04-10: $0.00'>10</div>
+<div class='heatmap-day day-neutral' title='2026-04-11: $0.00'>11</div>
+<div class='heatmap-day day-neutral' title='2026-04-12: $0.00'>12</div>
+<div class='heatmap-day day-profit' title='2026-04-13: $740.58'>13</div>
+<div class='heatmap-day day-loss' title='2026-04-14: $-237.63'>14</div>
+<div class='heatmap-day day-neutral' title='2026-04-15: $0.00'>15</div>
+<div class='heatmap-day day-neutral' title='2026-04-16: $0.00'>16</div>
+<div class='heatmap-day day-neutral' title='2026-04-17: $0.00'>17</div>
+<div class='heatmap-day day-neutral' title='2026-04-18: $0.00'>18</div>
+<div class='heatmap-day day-neutral' title='2026-04-19: $0.00'>19</div>
+<div class='heatmap-day day-loss' title='2026-04-20: $-356.87'>20</div>
+<div class='heatmap-day day-profit' title='2026-04-21: $576.51'>21</div>
+<div class='heatmap-day day-neutral' title='2026-04-22: $0.00'>22</div>
+<div class='heatmap-day day-loss' title='2026-04-23: $-105.22'>23</div>
+<div class='heatmap-day day-neutral' title='2026-04-24: $0.00'>24</div>
+<div class='heatmap-day day-neutral' title='2026-04-25: $0.00'>25</div>
+<div class='heatmap-day day-neutral' title='2026-04-26: $0.00'>26</div>
+<div class='heatmap-day day-neutral' title='2026-04-27: $0.00'>27</div>
+<div class='heatmap-day day-loss' title='2026-04-28: $-107.28'>28</div>
+<div class='heatmap-day day-neutral' title='2026-04-29: $0.00'>29</div>
+<div class='heatmap-day day-neutral' title='2026-04-30: $0.00'>30</div>
+<div class='heatmap-day day-neutral' title='2026-05-01: $0.00'>1</div>
+<div class='heatmap-day day-neutral' title='2026-05-02: $0.00'>2</div>
+<div class='heatmap-day day-neutral' title='2026-05-03: $0.00'>3</div>
+<div class='heatmap-day day-neutral' title='2026-05-04: $0.00'>4</div>
+<div class='heatmap-day day-neutral' title='2026-05-05: $0.00'>5</div>
+<div class='heatmap-day day-neutral' title='2026-05-06: $0.00'>6</div>
+<div class='heatmap-day day-profit' title='2026-05-07: $21.32'>7</div>
+<div class='heatmap-day day-neutral' title='2026-05-08: $0.00'>8</div>
+<div class='heatmap-day day-neutral' title='2026-05-09: $0.00'>9</div>
+<div class='heatmap-day day-neutral' title='2026-05-10: $0.00'>10</div>
+<div class='heatmap-day day-neutral' title='2026-05-11: $0.00'>11</div>
+<div class='heatmap-day day-neutral' title='2026-05-12: $0.00'>12</div>
+<div class='heatmap-day day-neutral' title='2026-05-13: $0.00'>13</div>
+</div>
+
             
             <h2>Visualizations</h2>
             <div class="chart-container">

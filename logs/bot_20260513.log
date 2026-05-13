@@ -15547,3 +15547,1091 @@
 2026-05-13 15:08:02  WARNING   core.mt5_connector            get_candles failed for TF=16388 count=20: (-10001, 'IPC send failed')
 2026-05-13 15:08:02  WARNING   core.mt5_connector            Could not fetch candles for TF=H4
 2026-05-13 15:08:02  WARNING   bot.main                      No candle data received — skipping.
+2026-05-13 16:49:27  INFO      backtest.main                 ============================================================
+2026-05-13 16:49:27  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:49:27  INFO      backtest.main                   Period: 2026-01-01 to 2026-02-01
+2026-05-13 16:49:27  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:49:27  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:49:27  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:49:27  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:49:27  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:49:27  INFO      backtest.main                 ============================================================
+2026-05-13 16:49:27  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260101_20260201.csv. Missing M1 data.
+2026-05-13 16:49:27  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260101_20260201.csv. Missing M5 data.
+2026-05-13 16:49:27  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260101_20260201.csv. Missing M15 data.
+2026-05-13 16:49:27  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260101_20260201.csv. Missing H1 data.
+2026-05-13 16:49:27  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260101_20260201.csv. Missing H4 data.
+2026-05-13 16:49:27  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Fetching historical data from 2026-01-01 to 2026-02-01
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Saved M1 (3779 candles) to data\XAUUSD_M1_20260101_20260201.csv
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Saved M5 (5764 candles) to data\XAUUSD_M5_20260101_20260201.csv
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Saved M15 (1922 candles) to data\XAUUSD_M15_20260101_20260201.csv
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Saved H1 (481 candles) to data\XAUUSD_H1_20260101_20260201.csv
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 16:49:30  INFO      backtesting.historical_data   Saved H4 (126 candles) to data\XAUUSD_H4_20260101_20260201.csv
+2026-05-13 16:49:30  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:49:30  INFO      backtesting.backtester        Starting backtest over 3779 M1 candles...
+2026-05-13 16:49:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 16:49:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 16:49:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 16:49:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 16:49:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 16:49:31  INFO      backtesting.backtester        Backtest completed. Final Balance: $9772.62
+2026-05-13 16:49:31  INFO      backtest.main                 Backtest completed. Total trades: 5
+2026-05-13 16:49:31  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:49:31  INFO      backtest.main                 Total Return : -2.27%
+2026-05-13 16:49:31  INFO      backtest.main                 Win Rate     : 0.00%
+2026-05-13 16:49:31  INFO      backtest.main                 Max Drawdown : 1.85%
+2026-05-13 16:49:31  INFO      backtest.main                 Profit Factor: 0.00
+2026-05-13 16:49:31  INFO      backtest.main                 Sharpe Ratio : -255.20
+2026-05-13 16:49:31  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:49:31  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:49:32  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:49:32  INFO      backtest.main                 Generating reports...
+2026-05-13 16:49:32  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:49:32  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:49:32  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:49:43  INFO      backtest.main                 ============================================================
+2026-05-13 16:49:43  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:49:43  INFO      backtest.main                   Period: 2026-01-01 to 2026-02-01
+2026-05-13 16:49:43  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:49:43  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:49:43  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:49:43  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:49:43  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:49:43  INFO      backtest.main                 ============================================================
+2026-05-13 16:49:43  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:49:43  INFO      backtesting.backtester        Starting backtest over 3779 M1 candles...
+2026-05-13 16:49:43  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 16:49:43  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 16:49:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 16:49:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 16:49:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 16:49:43  INFO      backtesting.backtester        Backtest completed. Final Balance: $9772.62
+2026-05-13 16:49:43  INFO      backtest.main                 Backtest completed. Total trades: 5
+2026-05-13 16:49:43  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:49:43  INFO      backtest.main                 Total Return : -2.27%
+2026-05-13 16:49:43  INFO      backtest.main                 Win Rate     : 0.00%
+2026-05-13 16:49:43  INFO      backtest.main                 Max Drawdown : 1.85%
+2026-05-13 16:49:43  INFO      backtest.main                 Profit Factor: 0.00
+2026-05-13 16:49:43  INFO      backtest.main                 Sharpe Ratio : -255.20
+2026-05-13 16:49:43  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:49:43  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:49:44  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:49:44  INFO      backtest.main                 Generating reports...
+2026-05-13 16:49:44  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:49:44  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:49:44  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:51:06  INFO      backtest.main                 ============================================================
+2026-05-13 16:51:06  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:51:06  INFO      backtest.main                   Period: 2026-02-01 to 2026-03-01
+2026-05-13 16:51:06  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:51:06  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:51:06  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:51:06  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:51:06  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:51:06  INFO      backtest.main                 ============================================================
+2026-05-13 16:51:06  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260201_20260301.csv. Missing M1 data.
+2026-05-13 16:51:06  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260201_20260301.csv. Missing M5 data.
+2026-05-13 16:51:06  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260201_20260301.csv. Missing M15 data.
+2026-05-13 16:51:06  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260201_20260301.csv. Missing H1 data.
+2026-05-13 16:51:06  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260201_20260301.csv. Missing H4 data.
+2026-05-13 16:51:06  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Fetching historical data from 2026-02-01 to 2026-03-01
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Saved M1 (27180 candles) to data\XAUUSD_M1_20260201_20260301.csv
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Saved M5 (5437 candles) to data\XAUUSD_M5_20260201_20260301.csv
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Saved M15 (1813 candles) to data\XAUUSD_M15_20260201_20260301.csv
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Saved H1 (454 candles) to data\XAUUSD_H1_20260201_20260301.csv
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 16:51:06  INFO      backtesting.historical_data   Saved H4 (120 candles) to data\XAUUSD_H4_20260201_20260301.csv
+2026-05-13 16:51:06  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:51:06  INFO      backtesting.backtester        Starting backtest over 27180 M1 candles...
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4896.42  SL=4826.14  TP=5318.10  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4892.93  SL=4826.14  TP=5293.67  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5060.23  SL=5038.94  TP=5187.97  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5059.01  SL=5038.94  TP=5179.43  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4976.80  SL=5020.98  TP=4711.72  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4980.04  SL=5020.98  TP=4734.40  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5018.67  SL=5020.98  TP=5004.81  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5019.14  SL=5020.98  TP=5008.10  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4878.55  SL=4848.87  TP=5056.63  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4882.14  SL=4848.87  TP=5081.76  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.39  SL=5117.74  TP=5346.29  RR=1:6.0
+2026-05-13 16:51:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.18  SL=5117.74  TP=5344.82  RR=1:6.0
+2026-05-13 16:51:07  INFO      backtesting.backtester        Backtest completed. Final Balance: $10999.72
+2026-05-13 16:51:07  INFO      backtest.main                 Backtest completed. Total trades: 12
+2026-05-13 16:51:07  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:51:07  INFO      backtest.main                 Total Return : 10.00%
+2026-05-13 16:51:07  INFO      backtest.main                 Win Rate     : 41.67%
+2026-05-13 16:51:07  INFO      backtest.main                 Max Drawdown : 2.37%
+2026-05-13 16:51:07  INFO      backtest.main                 Profit Factor: 3.82
+2026-05-13 16:51:07  INFO      backtest.main                 Sharpe Ratio : 7.47
+2026-05-13 16:51:07  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:51:07  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:51:08  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:51:08  INFO      backtest.main                 Generating reports...
+2026-05-13 16:51:08  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:51:08  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:51:08  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:51:46  INFO      backtest.main                 ============================================================
+2026-05-13 16:51:46  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:51:46  INFO      backtest.main                   Period: 2026-03-01 to 2026-04-01
+2026-05-13 16:51:46  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:51:46  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:51:46  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:51:46  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:51:46  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:51:46  INFO      backtest.main                 ============================================================
+2026-05-13 16:51:46  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260301_20260401.csv. Missing M1 data.
+2026-05-13 16:51:46  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260301_20260401.csv. Missing M5 data.
+2026-05-13 16:51:46  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260301_20260401.csv. Missing M15 data.
+2026-05-13 16:51:46  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260301_20260401.csv. Missing H1 data.
+2026-05-13 16:51:46  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260301_20260401.csv. Missing H4 data.
+2026-05-13 16:51:46  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Fetching historical data from 2026-03-01 to 2026-04-01
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Saved M1 (29793 candles) to data\XAUUSD_M1_20260301_20260401.csv
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Saved M5 (5961 candles) to data\XAUUSD_M5_20260301_20260401.csv
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Saved M15 (1989 candles) to data\XAUUSD_M15_20260301_20260401.csv
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Saved H1 (499 candles) to data\XAUUSD_H1_20260301_20260401.csv
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 16:51:46  INFO      backtesting.historical_data   Saved H4 (131 candles) to data\XAUUSD_H4_20260301_20260401.csv
+2026-05-13 16:51:46  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:51:46  INFO      backtesting.backtester        Starting backtest over 29793 M1 candles...
+2026-05-13 16:51:46  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5095.54  SL=4995.67  TP=5694.76  RR=1:6.0
+2026-05-13 16:51:46  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5093.83  SL=4995.67  TP=5682.79  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4834.70  SL=4804.93  TP=5013.32  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4831.60  SL=4804.93  TP=4991.62  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.40  SL=4449.29  TP=4793.06  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.73  SL=4449.29  TP=4795.37  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4513.74  SL=4492.02  TP=4644.06  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4516.69  SL=4492.02  TP=4664.71  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4493.69  SL=4492.02  TP=4503.71  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4499.15  SL=4492.02  TP=4541.93  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4503.98  SL=4492.02  TP=4575.74  RR=1:6.0
+2026-05-13 16:51:47  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4542.05  SL=4492.02  TP=4842.23  RR=1:6.0
+2026-05-13 16:51:47  INFO      backtesting.backtester        Backtest completed. Final Balance: $10100.41
+2026-05-13 16:51:47  INFO      backtest.main                 Backtest completed. Total trades: 12
+2026-05-13 16:51:47  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:51:47  INFO      backtest.main                 Total Return : 1.00%
+2026-05-13 16:51:47  INFO      backtest.main                 Win Rate     : 25.00%
+2026-05-13 16:51:47  INFO      backtest.main                 Max Drawdown : 4.56%
+2026-05-13 16:51:47  INFO      backtest.main                 Profit Factor: 1.18
+2026-05-13 16:51:47  INFO      backtest.main                 Sharpe Ratio : 0.77
+2026-05-13 16:51:47  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:51:47  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:51:49  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:51:49  INFO      backtest.main                 Generating reports...
+2026-05-13 16:51:49  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:51:49  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:51:49  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:52:20  INFO      backtest.main                 ============================================================
+2026-05-13 16:52:20  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:52:20  INFO      backtest.main                   Period: 2026-04-01 to 2026-05-01
+2026-05-13 16:52:20  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:52:20  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:52:20  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:52:20  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:52:20  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:52:20  INFO      backtest.main                 ============================================================
+2026-05-13 16:52:20  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260401_20260501.csv. Missing M1 data.
+2026-05-13 16:52:20  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260401_20260501.csv. Missing M5 data.
+2026-05-13 16:52:20  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260401_20260501.csv. Missing M15 data.
+2026-05-13 16:52:20  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260401_20260501.csv. Missing H1 data.
+2026-05-13 16:52:20  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260401_20260501.csv. Missing H4 data.
+2026-05-13 16:52:20  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Fetching historical data from 2026-04-01 to 2026-05-01
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Saved M1 (27451 candles) to data\XAUUSD_M1_20260401_20260501.csv
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Saved M5 (5491 candles) to data\XAUUSD_M5_20260401_20260501.csv
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Saved M15 (1831 candles) to data\XAUUSD_M15_20260401_20260501.csv
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Saved H1 (458 candles) to data\XAUUSD_H1_20260401_20260501.csv
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 16:52:20  INFO      backtesting.historical_data   Saved H4 (125 candles) to data\XAUUSD_H4_20260401_20260501.csv
+2026-05-13 16:52:21  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:52:21  INFO      backtesting.backtester        Starting backtest over 27451 M1 candles...
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4694.65  SL=4706.91  TP=4621.09  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 16:52:21  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 16:52:22  INFO      backtesting.backtester        Backtest completed. Final Balance: $11246.99
+2026-05-13 16:52:22  INFO      backtest.main                 Backtest completed. Total trades: 25
+2026-05-13 16:52:22  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:52:22  INFO      backtest.main                 Total Return : 12.47%
+2026-05-13 16:52:22  INFO      backtest.main                 Win Rate     : 28.00%
+2026-05-13 16:52:22  INFO      backtest.main                 Max Drawdown : 5.18%
+2026-05-13 16:52:22  INFO      backtest.main                 Profit Factor: 2.19
+2026-05-13 16:52:22  INFO      backtest.main                 Sharpe Ratio : 6.51
+2026-05-13 16:52:22  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:52:22  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:52:23  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:52:23  INFO      backtest.main                 Generating reports...
+2026-05-13 16:52:23  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:52:23  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:52:23  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:56:36  INFO      backtest.main                 ============================================================
+2026-05-13 16:56:36  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:56:36  INFO      backtest.main                   Period: 2026-04-01 to 2026-05-01
+2026-05-13 16:56:36  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:56:36  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:56:36  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:56:36  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:56:36  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:56:36  INFO      backtest.main                 ============================================================
+2026-05-13 16:56:37  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:56:37  INFO      backtesting.backtester        Starting backtest over 27451 M1 candles...
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4694.65  SL=4706.91  TP=4621.09  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 16:56:37  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 16:56:38  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 16:56:38  INFO      backtesting.backtester        Backtest completed. Final Balance: $11246.99
+2026-05-13 16:56:38  INFO      backtest.main                 Backtest completed. Total trades: 25
+2026-05-13 16:56:38  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:56:38  INFO      backtest.main                 Total Return : 12.47%
+2026-05-13 16:56:38  INFO      backtest.main                 Win Rate     : 28.00%
+2026-05-13 16:56:38  INFO      backtest.main                 Max Drawdown : 5.18%
+2026-05-13 16:56:38  INFO      backtest.main                 Profit Factor: 2.19
+2026-05-13 16:56:38  INFO      backtest.main                 Sharpe Ratio : 6.51
+2026-05-13 16:56:38  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:56:38  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:56:40  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:56:40  INFO      backtest.main                 Generating reports...
+2026-05-13 16:56:40  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:56:40  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:56:40  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:58:10  INFO      backtest.main                 ============================================================
+2026-05-13 16:58:10  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:58:10  INFO      backtest.main                   Period: 2026-03-01 to 2026-04-01
+2026-05-13 16:58:10  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:58:10  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:58:10  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:58:10  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:58:10  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:58:10  INFO      backtest.main                 ============================================================
+2026-05-13 16:58:10  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:58:10  INFO      backtesting.backtester        Starting backtest over 29793 M1 candles...
+2026-05-13 16:58:10  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5095.54  SL=4995.67  TP=5694.76  RR=1:6.0
+2026-05-13 16:58:10  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5093.83  SL=4995.67  TP=5682.79  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4834.70  SL=4804.93  TP=5013.32  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4831.60  SL=4804.93  TP=4991.62  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.40  SL=4449.29  TP=4793.06  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.73  SL=4449.29  TP=4795.37  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4513.74  SL=4492.02  TP=4644.06  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4516.69  SL=4492.02  TP=4664.71  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4493.69  SL=4492.02  TP=4503.71  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4499.15  SL=4492.02  TP=4541.93  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4503.98  SL=4492.02  TP=4575.74  RR=1:6.0
+2026-05-13 16:58:11  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4542.05  SL=4492.02  TP=4842.23  RR=1:6.0
+2026-05-13 16:58:11  INFO      backtesting.backtester        Backtest completed. Final Balance: $10100.41
+2026-05-13 16:58:11  INFO      backtest.main                 Backtest completed. Total trades: 12
+2026-05-13 16:58:11  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:58:11  INFO      backtest.main                 Total Return : 1.00%
+2026-05-13 16:58:11  INFO      backtest.main                 Win Rate     : 25.00%
+2026-05-13 16:58:11  INFO      backtest.main                 Max Drawdown : 4.56%
+2026-05-13 16:58:11  INFO      backtest.main                 Profit Factor: 1.18
+2026-05-13 16:58:11  INFO      backtest.main                 Sharpe Ratio : 0.77
+2026-05-13 16:58:11  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:58:11  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:58:13  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:58:13  INFO      backtest.main                 Generating reports...
+2026-05-13 16:58:13  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:58:13  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:58:13  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 16:58:57  INFO      backtest.main                 ============================================================
+2026-05-13 16:58:57  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 16:58:57  INFO      backtest.main                   Period: 2026-02-01 to 2026-03-01
+2026-05-13 16:58:57  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 16:58:57  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 16:58:57  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 16:58:57  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 16:58:57  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 16:58:57  INFO      backtest.main                 ============================================================
+2026-05-13 16:58:57  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 16:58:57  INFO      backtesting.backtester        Starting backtest over 27180 M1 candles...
+2026-05-13 16:58:57  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4896.42  SL=4826.14  TP=5318.10  RR=1:6.0
+2026-05-13 16:58:57  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4892.93  SL=4826.14  TP=5293.67  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5060.23  SL=5038.94  TP=5187.97  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5059.01  SL=5038.94  TP=5179.43  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4976.80  SL=5020.98  TP=4711.72  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4980.04  SL=5020.98  TP=4734.40  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5018.67  SL=5020.98  TP=5004.81  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5019.14  SL=5020.98  TP=5008.10  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4878.55  SL=4848.87  TP=5056.63  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4882.14  SL=4848.87  TP=5081.76  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.39  SL=5117.74  TP=5346.29  RR=1:6.0
+2026-05-13 16:58:58  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.18  SL=5117.74  TP=5344.82  RR=1:6.0
+2026-05-13 16:58:58  INFO      backtesting.backtester        Backtest completed. Final Balance: $10999.72
+2026-05-13 16:58:58  INFO      backtest.main                 Backtest completed. Total trades: 12
+2026-05-13 16:58:58  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 16:58:58  INFO      backtest.main                 Total Return : 10.00%
+2026-05-13 16:58:58  INFO      backtest.main                 Win Rate     : 41.67%
+2026-05-13 16:58:58  INFO      backtest.main                 Max Drawdown : 2.37%
+2026-05-13 16:58:58  INFO      backtest.main                 Profit Factor: 3.82
+2026-05-13 16:58:58  INFO      backtest.main                 Sharpe Ratio : 7.47
+2026-05-13 16:58:58  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 16:58:58  INFO      backtest.main                 Generating visualizations...
+2026-05-13 16:59:00  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 16:59:00  INFO      backtest.main                 Generating reports...
+2026-05-13 16:59:00  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 16:59:00  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 16:59:00  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:00:26  INFO      backtest.main                 ============================================================
+2026-05-13 17:00:26  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:00:26  INFO      backtest.main                   Period: 2026-01-01 to 2026-05-01
+2026-05-13 17:00:26  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:00:26  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:00:26  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:00:26  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:00:26  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:00:26  INFO      backtest.main                 ============================================================
+2026-05-13 17:00:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260101_20260501.csv. Missing M1 data.
+2026-05-13 17:00:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260101_20260501.csv. Missing M5 data.
+2026-05-13 17:00:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260101_20260501.csv. Missing M15 data.
+2026-05-13 17:00:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260101_20260501.csv. Missing H1 data.
+2026-05-13 17:00:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260101_20260501.csv. Missing H4 data.
+2026-05-13 17:00:26  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Fetching historical data from 2026-01-01 to 2026-05-01
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 17:00:26  WARNING   backtesting.historical_data   Stopped fetching M1 early. MT5 Error: (-1, 'Terminal: Call failed')
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Saved M1 (88472 candles) to data\XAUUSD_M1_20260101_20260501.csv
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Saved M5 (22706 candles) to data\XAUUSD_M5_20260101_20260501.csv
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Saved M15 (7572 candles) to data\XAUUSD_M15_20260101_20260501.csv
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Saved H1 (1896 candles) to data\XAUUSD_H1_20260101_20260501.csv
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 17:00:26  INFO      backtesting.historical_data   Saved H4 (503 candles) to data\XAUUSD_H4_20260101_20260501.csv
+2026-05-13 17:00:26  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:00:26  INFO      backtesting.backtester        Starting backtest over 88472 M1 candles...
+2026-05-13 17:00:26  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:00:26  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4896.42  SL=4826.14  TP=5318.10  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4892.93  SL=4826.14  TP=5293.67  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5060.23  SL=5038.94  TP=5187.97  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5059.01  SL=5038.94  TP=5179.43  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4976.80  SL=5020.98  TP=4711.72  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4980.04  SL=5020.98  TP=4734.40  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5018.67  SL=5020.98  TP=5004.81  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5019.14  SL=5020.98  TP=5008.10  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4878.55  SL=4848.87  TP=5056.63  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4882.14  SL=4848.87  TP=5081.76  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.39  SL=5117.74  TP=5346.29  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.18  SL=5117.74  TP=5344.82  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5392.09  SL=5403.12  TP=5325.91  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5389.35  SL=5403.12  TP=5306.73  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5095.54  SL=4995.67  TP=5694.76  RR=1:6.0
+2026-05-13 17:00:27  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5093.83  SL=4995.67  TP=5682.79  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4834.70  SL=4804.93  TP=5013.32  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4831.60  SL=4804.93  TP=4991.62  RR=1:6.0
+2026-05-13 17:00:28  INFO      backtesting.backtester        Processed 50000/88472 candles... Balance: $10608.50
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.40  SL=4449.29  TP=4793.06  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.73  SL=4449.29  TP=4795.37  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4513.74  SL=4492.02  TP=4644.06  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4516.69  SL=4492.02  TP=4664.71  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4493.69  SL=4492.02  TP=4503.71  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4499.15  SL=4492.02  TP=4541.93  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4503.98  SL=4492.02  TP=4575.74  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4542.05  SL=4492.02  TP=4842.23  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4724.23  entry=4712.95  SL=4747.97  TP=4502.83  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:00:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:00:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:00:29  INFO      backtesting.backtester        Backtest completed. Final Balance: $12231.34
+2026-05-13 17:00:29  INFO      backtest.main                 Backtest completed. Total trades: 56
+2026-05-13 17:00:29  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:00:29  INFO      backtest.main                 Total Return : 22.31%
+2026-05-13 17:00:29  INFO      backtest.main                 Win Rate     : 25.00%
+2026-05-13 17:00:29  INFO      backtest.main                 Max Drawdown : 6.05%
+2026-05-13 17:00:29  INFO      backtest.main                 Profit Factor: 1.93
+2026-05-13 17:00:29  INFO      backtest.main                 Sharpe Ratio : 3.60
+2026-05-13 17:00:29  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:00:29  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:00:30  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:00:30  INFO      backtest.main                 Generating reports...
+2026-05-13 17:00:30  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:00:30  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:00:30  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:02:29  INFO      backtest.main                 ============================================================
+2026-05-13 17:02:29  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:02:29  INFO      backtest.main                   Period: 2025-10-01 to 2026-05-01
+2026-05-13 17:02:29  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:02:29  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:02:29  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:02:29  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:02:29  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:02:29  INFO      backtest.main                 ============================================================
+2026-05-13 17:02:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20251001_20260501.csv. Missing M1 data.
+2026-05-13 17:02:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20251001_20260501.csv. Missing M5 data.
+2026-05-13 17:02:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20251001_20260501.csv. Missing M15 data.
+2026-05-13 17:02:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20251001_20260501.csv. Missing H1 data.
+2026-05-13 17:02:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20251001_20260501.csv. Missing H4 data.
+2026-05-13 17:02:29  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Fetching historical data from 2025-10-01 to 2026-05-01
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 17:02:29  WARNING   backtesting.historical_data   Stopped fetching M1 early. MT5 Error: (-1, 'Terminal: Call failed')
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Saved M1 (88472 candles) to data\XAUUSD_M1_20251001_20260501.csv
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Saved M5 (40460 candles) to data\XAUUSD_M5_20251001_20260501.csv
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Saved M15 (13509 candles) to data\XAUUSD_M15_20251001_20260501.csv
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Saved H1 (3385 candles) to data\XAUUSD_H1_20251001_20260501.csv
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 17:02:29  INFO      backtesting.historical_data   Saved H4 (893 candles) to data\XAUUSD_H4_20251001_20260501.csv
+2026-05-13 17:02:30  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:02:30  INFO      backtesting.backtester        Starting backtest over 88472 M1 candles...
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4896.42  SL=4826.14  TP=5318.10  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4892.93  SL=4826.14  TP=5293.67  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5060.23  SL=5038.94  TP=5187.97  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5059.01  SL=5038.94  TP=5179.43  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4976.80  SL=5020.98  TP=4711.72  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4980.04  SL=5020.98  TP=4734.40  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5018.67  SL=5020.98  TP=5004.81  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5019.14  SL=5020.98  TP=5008.10  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4878.55  SL=4848.87  TP=5056.63  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4882.14  SL=4848.87  TP=5081.76  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.39  SL=5117.74  TP=5346.29  RR=1:6.0
+2026-05-13 17:02:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.18  SL=5117.74  TP=5344.82  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5392.09  SL=5403.12  TP=5325.91  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5389.35  SL=5403.12  TP=5306.73  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5095.54  SL=4995.67  TP=5694.76  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5093.83  SL=4995.67  TP=5682.79  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4834.70  SL=4804.93  TP=5013.32  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4831.60  SL=4804.93  TP=4991.62  RR=1:6.0
+2026-05-13 17:02:31  INFO      backtesting.backtester        Processed 50000/88472 candles... Balance: $10608.50
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.40  SL=4449.29  TP=4793.06  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.73  SL=4449.29  TP=4795.37  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4513.74  SL=4492.02  TP=4644.06  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4516.69  SL=4492.02  TP=4664.71  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4493.69  SL=4492.02  TP=4503.71  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4499.15  SL=4492.02  TP=4541.93  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4503.98  SL=4492.02  TP=4575.74  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4542.05  SL=4492.02  TP=4842.23  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4724.23  entry=4712.95  SL=4747.97  TP=4502.83  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 17:02:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:02:32  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:02:32  INFO      backtesting.backtester        Backtest completed. Final Balance: $12231.34
+2026-05-13 17:02:32  INFO      backtest.main                 Backtest completed. Total trades: 56
+2026-05-13 17:02:32  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:02:32  INFO      backtest.main                 Total Return : 22.31%
+2026-05-13 17:02:32  INFO      backtest.main                 Win Rate     : 25.00%
+2026-05-13 17:02:32  INFO      backtest.main                 Max Drawdown : 6.05%
+2026-05-13 17:02:32  INFO      backtest.main                 Profit Factor: 1.93
+2026-05-13 17:02:32  INFO      backtest.main                 Sharpe Ratio : 3.60
+2026-05-13 17:02:32  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:02:32  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:02:33  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:02:33  INFO      backtest.main                 Generating reports...
+2026-05-13 17:02:33  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:02:33  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:02:33  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:03:26  INFO      backtest.main                 ============================================================
+2026-05-13 17:03:26  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:03:26  INFO      backtest.main                   Period: 2026-01-01 to 2026-01-30
+2026-05-13 17:03:26  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:03:26  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:03:26  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:03:26  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:03:26  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:03:26  INFO      backtest.main                 ============================================================
+2026-05-13 17:03:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260101_20260130.csv. Missing M1 data.
+2026-05-13 17:03:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260101_20260130.csv. Missing M5 data.
+2026-05-13 17:03:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260101_20260130.csv. Missing M15 data.
+2026-05-13 17:03:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260101_20260130.csv. Missing H1 data.
+2026-05-13 17:03:26  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260101_20260130.csv. Missing H4 data.
+2026-05-13 17:03:26  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Fetching historical data from 2026-01-01 to 2026-01-30
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 17:03:26  WARNING   backtesting.historical_data   Stopped fetching M1 early. MT5 Error: (-1, 'Terminal: Call failed')
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Saved M1 (2073 candles) to data\XAUUSD_M1_20260101_20260130.csv
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Saved M5 (5423 candles) to data\XAUUSD_M5_20260101_20260130.csv
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Saved M15 (1809 candles) to data\XAUUSD_M15_20260101_20260130.csv
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Saved H1 (453 candles) to data\XAUUSD_H1_20260101_20260130.csv
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 17:03:26  INFO      backtesting.historical_data   Saved H4 (119 candles) to data\XAUUSD_H4_20260101_20260130.csv
+2026-05-13 17:03:26  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:03:26  INFO      backtesting.backtester        Starting backtest over 2073 M1 candles...
+2026-05-13 17:03:26  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:03:26  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:03:26  INFO      backtesting.backtester        Backtest completed. Final Balance: $9922.45
+2026-05-13 17:03:26  INFO      backtest.main                 Backtest completed. Total trades: 2
+2026-05-13 17:03:26  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:03:26  INFO      backtest.main                 Total Return : -0.78%
+2026-05-13 17:03:26  INFO      backtest.main                 Win Rate     : 0.00%
+2026-05-13 17:03:26  INFO      backtest.main                 Max Drawdown : 0.34%
+2026-05-13 17:03:26  INFO      backtest.main                 Profit Factor: 0.00
+2026-05-13 17:03:26  INFO      backtest.main                 Sharpe Ratio : -8.74
+2026-05-13 17:03:26  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:03:26  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:03:27  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:03:27  INFO      backtest.main                 Generating reports...
+2026-05-13 17:03:27  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:03:27  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:03:27  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:03:43  INFO      backtest.main                 ============================================================
+2026-05-13 17:03:43  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:03:43  INFO      backtest.main                   Period: 2025-10-01 to 2026-05-01
+2026-05-13 17:03:43  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:03:43  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:03:43  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:03:43  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:03:43  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:03:43  INFO      backtest.main                 ============================================================
+2026-05-13 17:03:43  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:03:43  INFO      backtesting.backtester        Starting backtest over 88472 M1 candles...
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4896.42  SL=4826.14  TP=5318.10  RR=1:6.0
+2026-05-13 17:03:43  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4892.93  SL=4826.14  TP=5293.67  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5060.23  SL=5038.94  TP=5187.97  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5059.01  SL=5038.94  TP=5179.43  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4976.80  SL=5020.98  TP=4711.72  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4980.04  SL=5020.98  TP=4734.40  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5018.67  SL=5020.98  TP=5004.81  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5019.14  SL=5020.98  TP=5008.10  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4878.55  SL=4848.87  TP=5056.63  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4882.14  SL=4848.87  TP=5081.76  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.39  SL=5117.74  TP=5346.29  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.18  SL=5117.74  TP=5344.82  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5392.09  SL=5403.12  TP=5325.91  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5389.35  SL=5403.12  TP=5306.73  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5095.54  SL=4995.67  TP=5694.76  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5093.83  SL=4995.67  TP=5682.79  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4834.70  SL=4804.93  TP=5013.32  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4831.60  SL=4804.93  TP=4991.62  RR=1:6.0
+2026-05-13 17:03:44  INFO      backtesting.backtester        Processed 50000/88472 candles... Balance: $10608.50
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.40  SL=4449.29  TP=4793.06  RR=1:6.0
+2026-05-13 17:03:44  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.73  SL=4449.29  TP=4795.37  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4513.74  SL=4492.02  TP=4644.06  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4516.69  SL=4492.02  TP=4664.71  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4493.69  SL=4492.02  TP=4503.71  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4499.15  SL=4492.02  TP=4541.93  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4503.98  SL=4492.02  TP=4575.74  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4542.05  SL=4492.02  TP=4842.23  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4724.23  entry=4712.95  SL=4747.97  TP=4502.83  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:03:45  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:03:46  INFO      backtesting.backtester        Backtest completed. Final Balance: $12231.34
+2026-05-13 17:03:46  INFO      backtest.main                 Backtest completed. Total trades: 56
+2026-05-13 17:03:46  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:03:46  INFO      backtest.main                 Total Return : 22.31%
+2026-05-13 17:03:46  INFO      backtest.main                 Win Rate     : 25.00%
+2026-05-13 17:03:46  INFO      backtest.main                 Max Drawdown : 6.05%
+2026-05-13 17:03:46  INFO      backtest.main                 Profit Factor: 1.93
+2026-05-13 17:03:46  INFO      backtest.main                 Sharpe Ratio : 3.60
+2026-05-13 17:03:46  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:03:46  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:03:46  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:03:46  INFO      backtest.main                 Generating reports...
+2026-05-13 17:03:46  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:03:46  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:03:46  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:04:02  INFO      backtest.main                 ============================================================
+2026-05-13 17:04:02  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:04:02  INFO      backtest.main                   Period: 2026-01-01 to 2026-01-30
+2026-05-13 17:04:02  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:04:02  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:04:02  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:04:02  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:04:02  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:04:02  INFO      backtest.main                 ============================================================
+2026-05-13 17:04:02  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:04:02  INFO      backtesting.backtester        Starting backtest over 2073 M1 candles...
+2026-05-13 17:04:02  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:04:02  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:04:02  INFO      backtesting.backtester        Backtest completed. Final Balance: $9922.45
+2026-05-13 17:04:02  INFO      backtest.main                 Backtest completed. Total trades: 2
+2026-05-13 17:04:02  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:04:02  INFO      backtest.main                 Total Return : -0.78%
+2026-05-13 17:04:02  INFO      backtest.main                 Win Rate     : 0.00%
+2026-05-13 17:04:02  INFO      backtest.main                 Max Drawdown : 0.34%
+2026-05-13 17:04:02  INFO      backtest.main                 Profit Factor: 0.00
+2026-05-13 17:04:02  INFO      backtest.main                 Sharpe Ratio : -8.74
+2026-05-13 17:04:02  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:04:02  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:04:04  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:04:04  INFO      backtest.main                 Generating reports...
+2026-05-13 17:04:04  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:04:04  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:04:04  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:04:28  INFO      backtest.main                 ============================================================
+2026-05-13 17:04:28  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:04:28  INFO      backtest.main                   Period: 2025-10-01 to 2026-05-01
+2026-05-13 17:04:28  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:04:28  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:04:28  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:04:28  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:04:28  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:04:28  INFO      backtest.main                 ============================================================
+2026-05-13 17:04:28  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:04:28  INFO      backtesting.backtester        Starting backtest over 88472 M1 candles...
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4896.42  SL=4826.14  TP=5318.10  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4854.54  entry=4892.93  SL=4826.14  TP=5293.67  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5060.23  SL=5038.94  TP=5187.97  RR=1:6.0
+2026-05-13 17:04:28  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5043.54  entry=5059.01  SL=5038.94  TP=5179.43  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4976.80  SL=5020.98  TP=4711.72  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=4980.04  SL=5020.98  TP=4734.40  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5018.67  SL=5020.98  TP=5004.81  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4997.27  entry=5019.14  SL=5020.98  TP=5008.10  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4878.55  SL=4848.87  TP=5056.63  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4859.08  entry=4882.14  SL=4848.87  TP=5081.76  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.39  SL=5117.74  TP=5346.29  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5145.25  entry=5150.18  SL=5117.74  TP=5344.82  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5392.09  SL=5403.12  TP=5325.91  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5393.50  entry=5389.35  SL=5403.12  TP=5306.73  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5095.54  SL=4995.67  TP=5694.76  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5075.28  entry=5093.83  SL=4995.67  TP=5682.79  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4834.70  SL=4804.93  TP=5013.32  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4834.17  entry=4831.60  SL=4804.93  TP=4991.62  RR=1:6.0
+2026-05-13 17:04:29  INFO      backtesting.backtester        Processed 50000/88472 candles... Balance: $10608.50
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.40  SL=4449.29  TP=4793.06  RR=1:6.0
+2026-05-13 17:04:29  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4477.27  entry=4498.73  SL=4449.29  TP=4795.37  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4513.74  SL=4492.02  TP=4644.06  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4516.69  SL=4492.02  TP=4664.71  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4493.69  SL=4492.02  TP=4503.71  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4499.15  SL=4492.02  TP=4541.93  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4503.98  SL=4492.02  TP=4575.74  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4512.29  entry=4542.05  SL=4492.02  TP=4842.23  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4724.23  entry=4712.95  SL=4747.97  TP=4502.83  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:04:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:04:31  INFO      backtesting.backtester        Backtest completed. Final Balance: $12231.34
+2026-05-13 17:04:31  INFO      backtest.main                 Backtest completed. Total trades: 56
+2026-05-13 17:04:31  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:04:31  INFO      backtest.main                 Total Return : 22.31%
+2026-05-13 17:04:31  INFO      backtest.main                 Win Rate     : 25.00%
+2026-05-13 17:04:31  INFO      backtest.main                 Max Drawdown : 6.05%
+2026-05-13 17:04:31  INFO      backtest.main                 Profit Factor: 1.93
+2026-05-13 17:04:31  INFO      backtest.main                 Sharpe Ratio : 3.60
+2026-05-13 17:04:31  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:04:31  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:04:32  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:04:32  INFO      backtest.main                 Generating reports...
+2026-05-13 17:04:32  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:04:32  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:04:32  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:04:56  INFO      backtest.main                 ============================================================
+2026-05-13 17:04:56  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:04:56  INFO      backtest.main                   Period: 2026-01-01 to 2026-01-31
+2026-05-13 17:04:56  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:04:56  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:04:56  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:04:56  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:04:56  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:04:56  INFO      backtest.main                 ============================================================
+2026-05-13 17:04:56  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260101_20260131.csv. Missing M1 data.
+2026-05-13 17:04:56  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260101_20260131.csv. Missing M5 data.
+2026-05-13 17:04:56  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260101_20260131.csv. Missing M15 data.
+2026-05-13 17:04:56  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260101_20260131.csv. Missing H1 data.
+2026-05-13 17:04:56  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260101_20260131.csv. Missing H4 data.
+2026-05-13 17:04:56  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Fetching historical data from 2026-01-01 to 2026-01-31
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 17:04:56  WARNING   backtesting.historical_data   Stopped fetching M1 early. MT5 Error: (-1, 'Terminal: Call failed')
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Saved M1 (3450 candles) to data\XAUUSD_M1_20260101_20260131.csv
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Saved M5 (5699 candles) to data\XAUUSD_M5_20260101_20260131.csv
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Saved M15 (1901 candles) to data\XAUUSD_M15_20260101_20260131.csv
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Saved H1 (476 candles) to data\XAUUSD_H1_20260101_20260131.csv
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 17:04:56  INFO      backtesting.historical_data   Saved H4 (125 candles) to data\XAUUSD_H4_20260101_20260131.csv
+2026-05-13 17:04:56  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:04:56  INFO      backtesting.backtester        Starting backtest over 3450 M1 candles...
+2026-05-13 17:04:56  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5283.16  SL=5326.32  TP=5024.20  RR=1:6.0
+2026-05-13 17:04:56  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=5311.56  entry=5292.03  SL=5326.32  TP=5086.29  RR=1:6.0
+2026-05-13 17:04:56  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5135.93  SL=5089.81  TP=5412.65  RR=1:6.0
+2026-05-13 17:04:56  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5144.85  SL=5089.81  TP=5475.09  RR=1:6.0
+2026-05-13 17:04:56  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=5112.34  entry=5093.45  SL=5089.81  TP=5115.29  RR=1:6.0
+2026-05-13 17:04:56  INFO      backtesting.backtester        Backtest completed. Final Balance: $9772.62
+2026-05-13 17:04:56  INFO      backtest.main                 Backtest completed. Total trades: 5
+2026-05-13 17:04:56  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:04:56  INFO      backtest.main                 Total Return : -2.27%
+2026-05-13 17:04:56  INFO      backtest.main                 Win Rate     : 0.00%
+2026-05-13 17:04:56  INFO      backtest.main                 Max Drawdown : 1.85%
+2026-05-13 17:04:56  INFO      backtest.main                 Profit Factor: 0.00
+2026-05-13 17:04:56  INFO      backtest.main                 Sharpe Ratio : -255.20
+2026-05-13 17:04:56  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:04:56  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:04:57  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:04:57  INFO      backtest.main                 Generating reports...
+2026-05-13 17:04:57  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:04:57  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:04:57  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:22:29  INFO      backtest.main                 ============================================================
+2026-05-13 17:22:29  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:22:29  INFO      backtest.main                   Period: 2026-04-01 to 2026-05-13
+2026-05-13 17:22:29  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:22:29  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:22:29  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:22:29  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:22:29  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:22:29  INFO      backtest.main                 ============================================================
+2026-05-13 17:22:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M1_20260401_20260513.csv. Missing M1 data.
+2026-05-13 17:22:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M5_20260401_20260513.csv. Missing M5 data.
+2026-05-13 17:22:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_M15_20260401_20260513.csv. Missing M15 data.
+2026-05-13 17:22:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H1_20260401_20260513.csv. Missing H1 data.
+2026-05-13 17:22:29  WARNING   backtesting.historical_data   File not found: data\XAUUSD_H4_20260401_20260513.csv. Missing H4 data.
+2026-05-13 17:22:29  INFO      backtest.main                 Local data not found or incomplete. Fetching from MT5...
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Fetching historical data from 2026-04-01 to 2026-05-13
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Downloading M1 data in batches...
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Saved M1 (38011 candles) to data\XAUUSD_M1_20260401_20260513.csv
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Downloading M5 data in batches...
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Saved M5 (7603 candles) to data\XAUUSD_M5_20260401_20260513.csv
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Downloading M15 data in batches...
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Saved M15 (2535 candles) to data\XAUUSD_M15_20260401_20260513.csv
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Downloading H1 data in batches...
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Saved H1 (634 candles) to data\XAUUSD_H1_20260401_20260513.csv
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Downloading H4 data in batches...
+2026-05-13 17:22:29  INFO      backtesting.historical_data   Saved H4 (173 candles) to data\XAUUSD_H4_20260401_20260513.csv
+2026-05-13 17:22:29  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:22:29  INFO      backtesting.backtester        Starting backtest over 38011 M1 candles...
+2026-05-13 17:22:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:22:29  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4694.65  SL=4706.91  TP=4621.09  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:22:30  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:22:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4746.29  SL=4758.69  TP=4671.89  RR=1:6.0
+2026-05-13 17:22:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4747.32  SL=4758.69  TP=4679.10  RR=1:6.0
+2026-05-13 17:22:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4757.60  SL=4758.69  TP=4751.06  RR=1:6.0
+2026-05-13 17:22:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4757.54  SL=4758.69  TP=4750.64  RR=1:6.0
+2026-05-13 17:22:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4756.70  SL=4758.69  TP=4744.76  RR=1:6.0
+2026-05-13 17:22:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4757.87  SL=4758.69  TP=4752.95  RR=1:6.0
+2026-05-13 17:22:31  INFO      backtesting.backtester        Backtest completed. Final Balance: $11268.31
+2026-05-13 17:22:31  INFO      backtest.main                 Backtest completed. Total trades: 31
+2026-05-13 17:22:31  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:22:31  INFO      backtest.main                 Total Return : 12.68%
+2026-05-13 17:22:31  INFO      backtest.main                 Win Rate     : 25.81%
+2026-05-13 17:22:31  INFO      backtest.main                 Max Drawdown : 5.18%
+2026-05-13 17:22:31  INFO      backtest.main                 Profit Factor: 1.95
+2026-05-13 17:22:31  INFO      backtest.main                 Sharpe Ratio : 4.57
+2026-05-13 17:22:31  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:22:31  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:22:32  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:22:32  INFO      backtest.main                 Generating reports...
+2026-05-13 17:22:32  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:22:32  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:22:32  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:37:14  INFO      backtest.main                 ============================================================
+2026-05-13 17:37:14  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:37:14  INFO      backtest.main                   Period: 2026-04-01 to 2026-05-13
+2026-05-13 17:37:14  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:37:14  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:37:14  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:37:14  INFO      backtest.main                   Override Max Trades/Day: 2
+2026-05-13 17:37:14  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:37:14  INFO      backtest.main                 ============================================================
+2026-05-13 17:37:14  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:37:14  INFO      backtesting.backtester        Starting backtest over 38011 M1 candles...
+2026-05-13 17:37:14  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:37:14  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4694.65  SL=4706.91  TP=4621.09  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:37:15  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:37:16  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4746.29  SL=4758.69  TP=4671.89  RR=1:6.0
+2026-05-13 17:37:16  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4747.32  SL=4758.69  TP=4679.10  RR=1:6.0
+2026-05-13 17:37:16  INFO      backtesting.backtester        Backtest completed. Final Balance: $11162.09
+2026-05-13 17:37:16  INFO      backtest.main                 Backtest completed. Total trades: 20
+2026-05-13 17:37:16  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:37:16  INFO      backtest.main                 Total Return : 11.62%
+2026-05-13 17:37:16  INFO      backtest.main                 Win Rate     : 30.00%
+2026-05-13 17:37:16  INFO      backtest.main                 Max Drawdown : 3.21%
+2026-05-13 17:37:16  INFO      backtest.main                 Profit Factor: 2.41
+2026-05-13 17:37:16  INFO      backtest.main                 Sharpe Ratio : 4.85
+2026-05-13 17:37:16  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:37:16  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:37:18  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:37:18  INFO      backtest.main                 Generating reports...
+2026-05-13 17:37:18  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:37:18  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:37:18  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:38:06  INFO      backtest.main                 ============================================================
+2026-05-13 17:38:06  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:38:06  INFO      backtest.main                   Period: 2026-04-01 to 2026-05-13
+2026-05-13 17:38:06  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:38:06  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:38:06  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:38:06  INFO      backtest.main                   Override Max Trades/Day: 1
+2026-05-13 17:38:06  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:38:06  INFO      backtest.main                 ============================================================
+2026-05-13 17:38:06  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:38:06  INFO      backtesting.backtester        Starting backtest over 38011 M1 candles...
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:38:07  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:38:08  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4746.29  SL=4758.69  TP=4671.89  RR=1:6.0
+2026-05-13 17:38:08  INFO      backtesting.backtester        Backtest completed. Final Balance: $10492.24
+2026-05-13 17:38:08  INFO      backtest.main                 Backtest completed. Total trades: 10
+2026-05-13 17:38:08  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:38:08  INFO      backtest.main                 Total Return : 4.92%
+2026-05-13 17:38:08  INFO      backtest.main                 Win Rate     : 30.00%
+2026-05-13 17:38:08  INFO      backtest.main                 Max Drawdown : 1.56%
+2026-05-13 17:38:08  INFO      backtest.main                 Profit Factor: 2.29
+2026-05-13 17:38:08  INFO      backtest.main                 Sharpe Ratio : 3.18
+2026-05-13 17:38:08  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:38:08  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:38:10  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:38:10  INFO      backtest.main                 Generating reports...
+2026-05-13 17:38:10  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:38:10  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:38:10  INFO      backtest.main                 Backtesting pipeline finished successfully.
+2026-05-13 17:38:30  INFO      backtest.main                 ============================================================
+2026-05-13 17:38:30  INFO      backtest.main                   Historical Backtesting Engine - XAUUSD
+2026-05-13 17:38:30  INFO      backtest.main                   Period: 2026-04-01 to 2026-05-13
+2026-05-13 17:38:30  INFO      backtest.main                   Target Timeframes: H1
+2026-05-13 17:38:30  INFO      backtest.main                   Override Risk: 0.5% per trade
+2026-05-13 17:38:30  INFO      backtest.main                   Override Sweep Buffer: 40 pips
+2026-05-13 17:38:30  INFO      backtest.main                   Override Max Trades/Day: 6
+2026-05-13 17:38:30  INFO      backtest.main                   Override RR: 6.0 (All timeframes)
+2026-05-13 17:38:30  INFO      backtest.main                 ============================================================
+2026-05-13 17:38:30  INFO      backtest.main                 Initializing Backtester...
+2026-05-13 17:38:30  INFO      backtesting.backtester        Starting backtest over 38011 M1 candles...
+2026-05-13 17:38:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4693.64  SL=4706.91  TP=4614.02  RR=1:6.0
+2026-05-13 17:38:30  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4699.75  entry=4694.65  SL=4706.91  TP=4621.09  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4799.67  SL=4768.49  TP=4986.75  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4803.14  SL=4768.49  TP=5011.04  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4771.08  SL=4768.49  TP=4786.62  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4788.04  entry=4778.88  SL=4768.49  TP=4841.22  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.63  SL=4795.33  TP=4650.43  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.16  entry=4774.87  SL=4795.33  TP=4652.11  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4729.92  SL=4750.42  TP=4606.92  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4744.72  entry=4731.27  SL=4750.42  TP=4616.37  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4777.14  SL=4796.65  TP=4660.08  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4777.18  entry=4776.80  SL=4796.65  TP=4657.70  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4779.37  SL=4757.67  TP=4909.57  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4778.71  entry=4776.46  SL=4757.67  TP=4889.20  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4803.45  SL=4822.38  TP=4689.87  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4800.46  SL=4822.38  TP=4668.94  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4819.15  SL=4822.38  TP=4799.77  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4814.44  entry=4818.68  SL=4822.38  TP=4796.48  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4821.74  SL=4832.00  TP=4760.18  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4827.61  entry=4824.25  SL=4832.00  TP=4777.75  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4772.65  entry=4779.22  SL=4760.58  TP=4891.06  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4747.88  SL=4693.84  TP=5072.12  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4723.73  entry=4744.84  SL=4693.84  TP=5050.84  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4674.49  SL=4657.44  TP=4776.79  RR=1:6.0
+2026-05-13 17:38:31  INFO      core.sweep_detector           MTF sweep on H1: LONG  swept=4664.33  entry=4675.94  SL=4657.44  TP=4786.94  RR=1:6.0
+2026-05-13 17:38:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4746.29  SL=4758.69  TP=4671.89  RR=1:6.0
+2026-05-13 17:38:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4747.32  SL=4758.69  TP=4679.10  RR=1:6.0
+2026-05-13 17:38:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4757.60  SL=4758.69  TP=4751.06  RR=1:6.0
+2026-05-13 17:38:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4757.54  SL=4758.69  TP=4750.64  RR=1:6.0
+2026-05-13 17:38:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4756.70  SL=4758.69  TP=4744.76  RR=1:6.0
+2026-05-13 17:38:32  INFO      core.sweep_detector           MTF sweep on H1: SHORT  swept=4753.48  entry=4757.87  SL=4758.69  TP=4752.95  RR=1:6.0
+2026-05-13 17:38:32  INFO      backtesting.backtester        Backtest completed. Final Balance: $11268.31
+2026-05-13 17:38:32  INFO      backtest.main                 Backtest completed. Total trades: 31
+2026-05-13 17:38:32  INFO      backtest.main                 --- Performance Summary ---
+2026-05-13 17:38:32  INFO      backtest.main                 Total Return : 12.68%
+2026-05-13 17:38:32  INFO      backtest.main                 Win Rate     : 25.81%
+2026-05-13 17:38:32  INFO      backtest.main                 Max Drawdown : 5.18%
+2026-05-13 17:38:32  INFO      backtest.main                 Profit Factor: 1.95
+2026-05-13 17:38:32  INFO      backtest.main                 Sharpe Ratio : 4.57
+2026-05-13 17:38:32  INFO      backtesting.report_generator  Trade logs exported to reports\trades.csv
+2026-05-13 17:38:32  INFO      backtest.main                 Generating visualizations...
+2026-05-13 17:38:34  INFO      backtesting.visualizer        Visualizations saved to reports/
+2026-05-13 17:38:34  INFO      backtest.main                 Generating reports...
+2026-05-13 17:38:34  INFO      backtesting.report_generator  HTML report generated: reports\backtest_report.html
+2026-05-13 17:38:34  INFO      backtesting.report_generator  PDF generation requires external dependencies (wkhtmltopdf). Please open the HTML report and 'Print to PDF'.
+2026-05-13 17:38:34  INFO      backtest.main                 Backtesting pipeline finished successfully.

@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import logging
 
 logger = logging.getLogger(__name__)
@@ -11,7 +11,7 @@ class ReportGenerator:
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
 
-    def generate_html(self, metrics: dict, config):
+    def generate_html(self, metrics: dict, config, trades_df: pd.DataFrame = None, start_date=None, end_date=None):
         html_content = f"""
         <html>
         <head>
@@ -27,6 +27,11 @@ class ReportGenerator:
                 .container {{ display: flex; flex-wrap: wrap; }}
                 .chart-container {{ margin-top: 30px; }}
                 img {{ max-width: 100%; border: 1px solid #333; border-radius: 8px; }}
+                .heatmap {{ display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; margin-bottom: 30px; }}
+                .heatmap-day {{ width: 30px; height: 30px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #fff; cursor: pointer; }}
+                .day-profit {{ background-color: #2e7d32; }}
+                .day-loss {{ background-color: #c62828; }}
+                .day-neutral {{ background-color: #333333; }}
             </style>
         </head>
         <body>
@@ -61,6 +66,8 @@ class ReportGenerator:
                 </div>
             </div>
             
+            {self._generate_heatmap_html(trades_df, start_date, end_date)}
+            
             <h2>Visualizations</h2>
             <div class="chart-container">
                 <img src="equity_drawdown.png" alt="Equity & Drawdown">
@@ -79,6 +86,38 @@ class ReportGenerator:
             f.write(html_content)
         
         logger.info(f"HTML report generated: {report_path}")
+
+    def _generate_heatmap_html(self, trades_df, start_date, end_date):
+        if trades_df is None or start_date is None or end_date is None:
+            return ""
+            
+        heatmap_html = "<h2>Daily PnL Heatmap</h2>\n<div class='heatmap'>\n"
+        
+        daily_pnl = {}
+        if not trades_df.empty:
+            df = trades_df.copy()
+            df['close_date'] = pd.to_datetime(df['close_time']).dt.date
+            daily_pnl = df.groupby('close_date')['pnl'].sum().to_dict()
+            
+        curr_date = start_date.date()
+        end_d = end_date.date()
+        
+        while curr_date <= end_d:
+            pnl = daily_pnl.get(curr_date, 0.0)
+            css_class = "day-neutral"
+            if pnl > 0:
+                css_class = "day-profit"
+            elif pnl < 0:
+                css_class = "day-loss"
+            
+            title = f"{curr_date.strftime('%Y-%m-%d')}: ${pnl:.2f}"
+            day_str = str(curr_date.day)
+            heatmap_html += f"<div class='heatmap-day {css_class}' title='{title}'>{day_str}</div>\n"
+            
+            curr_date += timedelta(days=1)
+            
+        heatmap_html += "</div>\n"
+        return heatmap_html
 
     def export_trade_logs(self, trades_df: pd.DataFrame):
         csv_path = os.path.join(self.output_dir, "trades.csv")
