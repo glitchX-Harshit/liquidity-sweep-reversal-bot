@@ -1,0 +1,510 @@
+2026-05-13 00:49:23  INFO      core.mt5_connector            Connected: login=5049682276  name=Harshit Chaudhary  balance=5016.55 USD
+2026-05-13 00:49:23  INFO      bot.main                      Executing debug LONG order at 4702.62
+2026-05-13 00:49:23  INFO      core.risk_manager             New trading day. Start balance: 5016.55
+2026-05-13 00:49:23  INFO      core.trade_executor           ORDER: LONG  tf=DEBUG  rr=1:2.0  entry=4702.62  SL=4700.62  TP=4706.62  lots=0.25
+2026-05-13 00:49:23  INFO      core.trade_executor           FILLED: ticket=56623948577  price=4702.62  lots=0.25
+2026-05-13 00:49:23  INFO      utils.trade_logger            [LOG] OPEN  ticket=56623948577  LONG  TF=DEBUG  RR=1:2.0  entry=4702.62
+2026-05-13 00:49:23  INFO      bot.main                      Debug trade opened successfully.
+2026-05-13 00:49:23  INFO      core.mt5_connector            MT5 disconnected.
+2026-05-13 00:53:08  INFO      core.mt5_connector            Connected: login=5049682276  name=Harshit Chaudhary  balance=4966.55 USD
+2026-05-13 00:53:08  INFO      bot.main                      ============================================================
+2026-05-13 00:53:08  INFO      bot.main                        XAUUSD Multi-Timeframe Sweep Reversal Bot  [LIVE]
+2026-05-13 00:53:08  INFO      bot.main                        Account : 5049682276  (Harshit Chaudhary)
+2026-05-13 00:53:08  INFO      bot.main                        Balance : 4966.55 USD
+2026-05-13 00:53:08  INFO      bot.main                        Entry TF: M1   |   Analysis TFs: M1, M5, M15, H1, H4
+2026-05-13 00:53:08  INFO      bot.main                        TF Rules:
+2026-05-13 00:53:08  INFO      bot.main                          M1    lookback=40   rr=1:1.5  priority=1
+2026-05-13 00:53:08  INFO      bot.main                          M5    lookback=30   rr=1:2.0  priority=2
+2026-05-13 00:53:08  INFO      bot.main                          M15   lookback=25   rr=1:3.0  priority=3
+2026-05-13 00:53:08  INFO      bot.main                          H1    lookback=20   rr=1:4.0  priority=4
+2026-05-13 00:53:08  INFO      bot.main                          H4    lookback=15   rr=1:5.0  priority=5
+2026-05-13 00:53:08  INFO      bot.main                        Max open trades : 2
+2026-05-13 00:53:08  INFO      bot.main                        Risk per trade  : 1.0%
+2026-05-13 00:53:08  INFO      bot.main                        Daily loss limit: 5.0%
+2026-05-13 00:53:08  INFO      bot.main                      ============================================================
+2026-05-13 00:53:08  INFO      bot.main                      Bot started. Waiting for first M1 candle close…
+2026-05-13 00:54:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:24:02 UTC ──────────────────────────────────
+2026-05-13 00:54:02  INFO      bot.main                      M1 close=4701.99  current=4702.11  open_trades=0/2
+2026-05-13 00:54:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 00:54:58  INFO      bot.main                      Shutdown signal (2) received — finishing current loop…
+2026-05-13 00:54:58  INFO      bot.main                      Shutting down — closing all open positions…
+2026-05-13 00:54:58  INFO      utils.trade_logger            No closed trades.
+2026-05-13 00:54:58  INFO      bot.main                      Bot stopped cleanly.
+2026-05-13 00:54:58  INFO      core.mt5_connector            MT5 disconnected.
+2026-05-13 00:55:01  INFO      core.mt5_connector            Connected: login=5049682276  name=Harshit Chaudhary  balance=4966.55 USD
+2026-05-13 00:55:01  INFO      bot.main                      ============================================================
+2026-05-13 00:55:01  INFO      bot.main                        XAUUSD Multi-Timeframe Sweep Reversal Bot  [LIVE]
+2026-05-13 00:55:01  INFO      bot.main                        Account : 5049682276  (Harshit Chaudhary)
+2026-05-13 00:55:01  INFO      bot.main                        Balance : 4966.55 USD
+2026-05-13 00:55:01  INFO      bot.main                        Entry TF: M1   |   Analysis TFs: M1, M5, M15, H1, H4
+2026-05-13 00:55:01  INFO      bot.main                        TF Rules:
+2026-05-13 00:55:01  INFO      bot.main                          M1    lookback=40   rr=1:1.5  priority=1
+2026-05-13 00:55:01  INFO      bot.main                          M5    lookback=30   rr=1:2.0  priority=2
+2026-05-13 00:55:01  INFO      bot.main                          M15   lookback=30   rr=1:3.0  priority=3
+2026-05-13 00:55:01  INFO      bot.main                          H1    lookback=20   rr=1:4.0  priority=4
+2026-05-13 00:55:01  INFO      bot.main                          H4    lookback=15   rr=1:5.0  priority=5
+2026-05-13 00:55:01  INFO      bot.main                        Max open trades : 2
+2026-05-13 00:55:01  INFO      bot.main                        Risk per trade  : 1.0%
+2026-05-13 00:55:01  INFO      bot.main                        Daily loss limit: 5.0%
+2026-05-13 00:55:01  INFO      bot.main                      ============================================================
+2026-05-13 00:55:01  INFO      bot.main                      Bot started. Waiting for first M1 candle close…
+2026-05-13 00:55:49  INFO      core.mt5_connector            Connected: login=5049682276  name=Harshit Chaudhary  balance=4966.55 USD
+2026-05-13 00:55:49  INFO      bot.main                      Executing debug LONG order at 4704.54
+2026-05-13 00:55:49  INFO      core.risk_manager             New trading day. Start balance: 4966.55
+2026-05-13 00:55:49  INFO      core.trade_executor           ORDER: LONG  tf=DEBUG  rr=1:2.0  entry=4704.54  SL=4702.54  TP=4708.54  lots=0.25
+2026-05-13 00:55:49  INFO      core.trade_executor           FILLED: ticket=56624022298  price=4704.54  lots=0.25
+2026-05-13 00:55:49  INFO      utils.trade_logger            [LOG] OPEN  ticket=56624022298  LONG  TF=DEBUG  RR=1:2.0  entry=4704.54
+2026-05-13 00:55:49  INFO      bot.main                      Debug trade opened successfully.
+2026-05-13 00:55:49  INFO      core.mt5_connector            MT5 disconnected.
+2026-05-13 00:56:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:26:02 UTC ──────────────────────────────────
+2026-05-13 00:56:02  INFO      bot.main                      M1 close=4704.38  current=4704.68  open_trades=1/2
+2026-05-13 00:56:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 00:57:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:27:02 UTC ──────────────────────────────────
+2026-05-13 00:57:02  INFO      bot.main                      M1 close=4704.09  current=4704.36  open_trades=1/2
+2026-05-13 00:57:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 00:58:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:28:02 UTC ──────────────────────────────────
+2026-05-13 00:58:02  INFO      bot.main                      M1 close=4703.85  current=4703.75  open_trades=1/2
+2026-05-13 00:58:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 00:59:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:29:02 UTC ──────────────────────────────────
+2026-05-13 00:59:02  INFO      bot.main                      M1 close=4703.62  current=4703.91  open_trades=1/2
+2026-05-13 00:59:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:00:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:30:02 UTC ──────────────────────────────────
+2026-05-13 01:00:02  INFO      bot.main                      M1 close=4703.60  current=4705.08  open_trades=1/2
+2026-05-13 01:00:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:01:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:31:02 UTC ──────────────────────────────────
+2026-05-13 01:01:02  INFO      bot.main                      M1 close=4704.96  current=4704.83  open_trades=1/2
+2026-05-13 01:01:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:02:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:32:02 UTC ──────────────────────────────────
+2026-05-13 01:02:02  INFO      bot.main                      M1 close=4706.83  current=4705.95  open_trades=1/2
+2026-05-13 01:02:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:03:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:33:02 UTC ──────────────────────────────────
+2026-05-13 01:03:02  INFO      bot.main                      M1 close=4707.33  current=4707.41  open_trades=1/2
+2026-05-13 01:03:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:04:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:34:02 UTC ──────────────────────────────────
+2026-05-13 01:04:02  INFO      bot.main                      M1 close=4708.01  current=4708.08  open_trades=1/2
+2026-05-13 01:04:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:05:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:35:02 UTC ──────────────────────────────────
+2026-05-13 01:05:02  INFO      bot.main                      M1 close=4708.99  current=4709.78  open_trades=0/2
+2026-05-13 01:05:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:06:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:36:02 UTC ──────────────────────────────────
+2026-05-13 01:06:02  INFO      bot.main                      M1 close=4708.96  current=4710.42  open_trades=0/2
+2026-05-13 01:06:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:07:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:37:02 UTC ──────────────────────────────────
+2026-05-13 01:07:02  INFO      bot.main                      M1 close=4709.85  current=4709.65  open_trades=0/2
+2026-05-13 01:07:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:08:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:38:02 UTC ──────────────────────────────────
+2026-05-13 01:08:02  INFO      bot.main                      M1 close=4709.19  current=4709.66  open_trades=0/2
+2026-05-13 01:08:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:09:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:39:02 UTC ──────────────────────────────────
+2026-05-13 01:09:02  INFO      bot.main                      M1 close=4709.31  current=4709.29  open_trades=0/2
+2026-05-13 01:09:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:10:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:40:02 UTC ──────────────────────────────────
+2026-05-13 01:10:02  INFO      bot.main                      M1 close=4708.44  current=4708.49  open_trades=0/2
+2026-05-13 01:10:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:11:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:41:02 UTC ──────────────────────────────────
+2026-05-13 01:11:02  INFO      bot.main                      M1 close=4707.33  current=4708.57  open_trades=0/2
+2026-05-13 01:11:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:12:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:42:02 UTC ──────────────────────────────────
+2026-05-13 01:12:02  INFO      bot.main                      M1 close=4709.49  current=4708.96  open_trades=0/2
+2026-05-13 01:12:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:13:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:43:02 UTC ──────────────────────────────────
+2026-05-13 01:13:02  INFO      bot.main                      M1 close=4709.06  current=4709.56  open_trades=0/2
+2026-05-13 01:13:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:14:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:44:02 UTC ──────────────────────────────────
+2026-05-13 01:14:02  INFO      bot.main                      M1 close=4709.17  current=4709.31  open_trades=0/2
+2026-05-13 01:14:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:15:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:45:02 UTC ──────────────────────────────────
+2026-05-13 01:15:02  INFO      bot.main                      M1 close=4709.49  current=4709.52  open_trades=0/2
+2026-05-13 01:15:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:16:03  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:46:03 UTC ──────────────────────────────────
+2026-05-13 01:16:03  INFO      bot.main                      M1 close=4709.81  current=4710.11  open_trades=0/2
+2026-05-13 01:16:03  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:17:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:47:02 UTC ──────────────────────────────────
+2026-05-13 01:17:02  INFO      bot.main                      M1 close=4709.97  current=4710.17  open_trades=0/2
+2026-05-13 01:17:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:18:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:48:02 UTC ──────────────────────────────────
+2026-05-13 01:18:02  INFO      bot.main                      M1 close=4709.58  current=4710.38  open_trades=0/2
+2026-05-13 01:18:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:19:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:49:02 UTC ──────────────────────────────────
+2026-05-13 01:19:02  INFO      bot.main                      M1 close=4710.73  current=4709.83  open_trades=0/2
+2026-05-13 01:19:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:20:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:50:02 UTC ──────────────────────────────────
+2026-05-13 01:20:02  INFO      bot.main                      M1 close=4709.90  current=4710.29  open_trades=0/2
+2026-05-13 01:20:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:21:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:51:02 UTC ──────────────────────────────────
+2026-05-13 01:21:02  INFO      bot.main                      M1 close=4711.15  current=4710.99  open_trades=0/2
+2026-05-13 01:21:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:22:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:52:02 UTC ──────────────────────────────────
+2026-05-13 01:22:02  INFO      bot.main                      M1 close=4710.63  current=4710.71  open_trades=0/2
+2026-05-13 01:22:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:23:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:53:02 UTC ──────────────────────────────────
+2026-05-13 01:23:02  INFO      bot.main                      M1 close=4710.13  current=4710.39  open_trades=0/2
+2026-05-13 01:23:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:24:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:54:02 UTC ──────────────────────────────────
+2026-05-13 01:24:02  INFO      bot.main                      M1 close=4711.89  current=4712.51  open_trades=0/2
+2026-05-13 01:24:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:25:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:55:02 UTC ──────────────────────────────────
+2026-05-13 01:25:02  INFO      bot.main                      M1 close=4712.61  current=4713.05  open_trades=0/2
+2026-05-13 01:25:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:26:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:56:02 UTC ──────────────────────────────────
+2026-05-13 01:26:02  INFO      bot.main                      M1 close=4713.56  current=4713.25  open_trades=0/2
+2026-05-13 01:26:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:27:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:57:02 UTC ──────────────────────────────────
+2026-05-13 01:27:02  INFO      bot.main                      M1 close=4713.62  current=4713.74  open_trades=0/2
+2026-05-13 01:27:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:28:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:58:02 UTC ──────────────────────────────────
+2026-05-13 01:28:02  INFO      bot.main                      M1 close=4714.25  current=4714.31  open_trades=0/2
+2026-05-13 01:28:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:29:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 19:59:02 UTC ──────────────────────────────────
+2026-05-13 01:29:02  INFO      bot.main                      M1 close=4714.75  current=4714.91  open_trades=0/2
+2026-05-13 01:29:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:30:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:00:02 UTC ──────────────────────────────────
+2026-05-13 01:30:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:30:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:31:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:01:02 UTC ──────────────────────────────────
+2026-05-13 01:31:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:31:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:32:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:02:02 UTC ──────────────────────────────────
+2026-05-13 01:32:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:32:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:33:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:03:02 UTC ──────────────────────────────────
+2026-05-13 01:33:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:33:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:34:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:04:02 UTC ──────────────────────────────────
+2026-05-13 01:34:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:34:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:35:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:05:02 UTC ──────────────────────────────────
+2026-05-13 01:35:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:35:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:36:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:06:02 UTC ──────────────────────────────────
+2026-05-13 01:36:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:36:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:37:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:07:02 UTC ──────────────────────────────────
+2026-05-13 01:37:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:37:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:38:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:08:02 UTC ──────────────────────────────────
+2026-05-13 01:38:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:38:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:39:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:09:02 UTC ──────────────────────────────────
+2026-05-13 01:39:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:39:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:40:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:10:02 UTC ──────────────────────────────────
+2026-05-13 01:40:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:40:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:41:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:11:02 UTC ──────────────────────────────────
+2026-05-13 01:41:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:41:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:42:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:12:02 UTC ──────────────────────────────────
+2026-05-13 01:42:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:42:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:43:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:13:02 UTC ──────────────────────────────────
+2026-05-13 01:43:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:43:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:44:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:14:02 UTC ──────────────────────────────────
+2026-05-13 01:44:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:44:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:45:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:15:02 UTC ──────────────────────────────────
+2026-05-13 01:45:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:45:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:46:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:16:02 UTC ──────────────────────────────────
+2026-05-13 01:46:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:46:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:47:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:17:02 UTC ──────────────────────────────────
+2026-05-13 01:47:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:47:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:48:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:18:02 UTC ──────────────────────────────────
+2026-05-13 01:48:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:48:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:49:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:19:02 UTC ──────────────────────────────────
+2026-05-13 01:49:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:49:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:50:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:20:02 UTC ──────────────────────────────────
+2026-05-13 01:50:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:50:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:51:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:21:02 UTC ──────────────────────────────────
+2026-05-13 01:51:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:51:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:52:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:22:02 UTC ──────────────────────────────────
+2026-05-13 01:52:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:52:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:53:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:23:02 UTC ──────────────────────────────────
+2026-05-13 01:53:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:53:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:54:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:24:02 UTC ──────────────────────────────────
+2026-05-13 01:54:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:54:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:55:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:25:02 UTC ──────────────────────────────────
+2026-05-13 01:55:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:55:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:56:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:26:02 UTC ──────────────────────────────────
+2026-05-13 01:56:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:56:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:57:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:27:02 UTC ──────────────────────────────────
+2026-05-13 01:57:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:57:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:58:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:28:02 UTC ──────────────────────────────────
+2026-05-13 01:58:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:58:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 01:59:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:29:02 UTC ──────────────────────────────────
+2026-05-13 01:59:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 01:59:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:00:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:30:02 UTC ──────────────────────────────────
+2026-05-13 02:00:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:00:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:01:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:31:02 UTC ──────────────────────────────────
+2026-05-13 02:01:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:01:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:02:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:32:02 UTC ──────────────────────────────────
+2026-05-13 02:02:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:02:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:03:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:33:02 UTC ──────────────────────────────────
+2026-05-13 02:03:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:03:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:04:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:34:02 UTC ──────────────────────────────────
+2026-05-13 02:04:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:04:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:05:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:35:02 UTC ──────────────────────────────────
+2026-05-13 02:05:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:05:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:06:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:36:02 UTC ──────────────────────────────────
+2026-05-13 02:06:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:06:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:07:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:37:02 UTC ──────────────────────────────────
+2026-05-13 02:07:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:07:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:08:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:38:02 UTC ──────────────────────────────────
+2026-05-13 02:08:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:08:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:09:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:39:02 UTC ──────────────────────────────────
+2026-05-13 02:09:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:09:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:10:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:40:02 UTC ──────────────────────────────────
+2026-05-13 02:10:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:10:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:11:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:41:02 UTC ──────────────────────────────────
+2026-05-13 02:11:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:11:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:12:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:42:02 UTC ──────────────────────────────────
+2026-05-13 02:12:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:12:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:13:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:43:02 UTC ──────────────────────────────────
+2026-05-13 02:13:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:13:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:14:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:44:02 UTC ──────────────────────────────────
+2026-05-13 02:14:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:14:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:15:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:45:02 UTC ──────────────────────────────────
+2026-05-13 02:15:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:15:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:16:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:46:02 UTC ──────────────────────────────────
+2026-05-13 02:16:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:16:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:17:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:47:02 UTC ──────────────────────────────────
+2026-05-13 02:17:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:17:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:18:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:48:02 UTC ──────────────────────────────────
+2026-05-13 02:18:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:18:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:19:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:49:02 UTC ──────────────────────────────────
+2026-05-13 02:19:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:19:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:20:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:50:02 UTC ──────────────────────────────────
+2026-05-13 02:20:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:20:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:21:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:51:02 UTC ──────────────────────────────────
+2026-05-13 02:21:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:21:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:22:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:52:02 UTC ──────────────────────────────────
+2026-05-13 02:22:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:22:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:23:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:53:02 UTC ──────────────────────────────────
+2026-05-13 02:23:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:23:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:24:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:54:02 UTC ──────────────────────────────────
+2026-05-13 02:24:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:24:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:25:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:55:02 UTC ──────────────────────────────────
+2026-05-13 02:25:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:25:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:26:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:56:02 UTC ──────────────────────────────────
+2026-05-13 02:26:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:26:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:27:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:57:02 UTC ──────────────────────────────────
+2026-05-13 02:27:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:27:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:28:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:58:02 UTC ──────────────────────────────────
+2026-05-13 02:28:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:28:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:29:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 20:59:02 UTC ──────────────────────────────────
+2026-05-13 02:29:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:29:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:30:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:00:02 UTC ──────────────────────────────────
+2026-05-13 02:30:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:30:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:31:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:01:02 UTC ──────────────────────────────────
+2026-05-13 02:31:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:31:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:32:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:02:02 UTC ──────────────────────────────────
+2026-05-13 02:32:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:32:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:33:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:03:02 UTC ──────────────────────────────────
+2026-05-13 02:33:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:33:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:34:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:04:02 UTC ──────────────────────────────────
+2026-05-13 02:34:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:34:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:35:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:05:02 UTC ──────────────────────────────────
+2026-05-13 02:35:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:35:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:36:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:06:02 UTC ──────────────────────────────────
+2026-05-13 02:36:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:36:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:37:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:07:02 UTC ──────────────────────────────────
+2026-05-13 02:37:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:37:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:38:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:08:02 UTC ──────────────────────────────────
+2026-05-13 02:38:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:38:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:39:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:09:02 UTC ──────────────────────────────────
+2026-05-13 02:39:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:39:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:40:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:10:02 UTC ──────────────────────────────────
+2026-05-13 02:40:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:40:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:41:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:11:02 UTC ──────────────────────────────────
+2026-05-13 02:41:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:41:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:42:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:12:02 UTC ──────────────────────────────────
+2026-05-13 02:42:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:42:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:43:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:13:02 UTC ──────────────────────────────────
+2026-05-13 02:43:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:43:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:44:03  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:14:03 UTC ──────────────────────────────────
+2026-05-13 02:44:03  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:44:03  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:45:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:15:02 UTC ──────────────────────────────────
+2026-05-13 02:45:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:45:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:46:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:16:02 UTC ──────────────────────────────────
+2026-05-13 02:46:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:46:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:47:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:17:02 UTC ──────────────────────────────────
+2026-05-13 02:47:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:47:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:48:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:18:02 UTC ──────────────────────────────────
+2026-05-13 02:48:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:48:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:49:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:19:02 UTC ──────────────────────────────────
+2026-05-13 02:49:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:49:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:50:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:20:02 UTC ──────────────────────────────────
+2026-05-13 02:50:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:50:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:51:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:21:02 UTC ──────────────────────────────────
+2026-05-13 02:51:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:51:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:52:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:22:02 UTC ──────────────────────────────────
+2026-05-13 02:52:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:52:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:53:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:23:02 UTC ──────────────────────────────────
+2026-05-13 02:53:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:53:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:54:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:24:02 UTC ──────────────────────────────────
+2026-05-13 02:54:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:54:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:55:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:25:02 UTC ──────────────────────────────────
+2026-05-13 02:55:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:55:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:56:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:26:02 UTC ──────────────────────────────────
+2026-05-13 02:56:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:56:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:57:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:27:02 UTC ──────────────────────────────────
+2026-05-13 02:57:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:57:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:58:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:28:02 UTC ──────────────────────────────────
+2026-05-13 02:58:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:58:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 02:59:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:29:02 UTC ──────────────────────────────────
+2026-05-13 02:59:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 02:59:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:00:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:30:02 UTC ──────────────────────────────────
+2026-05-13 03:00:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:00:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:01:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:31:02 UTC ──────────────────────────────────
+2026-05-13 03:01:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:01:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:02:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:32:02 UTC ──────────────────────────────────
+2026-05-13 03:02:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:02:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:03:03  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:33:03 UTC ──────────────────────────────────
+2026-05-13 03:03:03  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:03:03  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:04:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:34:02 UTC ──────────────────────────────────
+2026-05-13 03:04:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:04:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:05:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:35:02 UTC ──────────────────────────────────
+2026-05-13 03:05:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:05:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:06:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:36:02 UTC ──────────────────────────────────
+2026-05-13 03:06:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:06:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:07:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:37:02 UTC ──────────────────────────────────
+2026-05-13 03:07:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:07:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:08:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:38:02 UTC ──────────────────────────────────
+2026-05-13 03:08:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:08:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:09:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:39:02 UTC ──────────────────────────────────
+2026-05-13 03:09:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:09:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 03:10:02  INFO      bot.main                      ── M1 tick @ 2026-05-12 21:40:02 UTC ──────────────────────────────────
+2026-05-13 03:10:02  INFO      bot.main                      M1 close=4714.75  current=4715.88  open_trades=0/2
+2026-05-13 03:10:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:16:10  INFO      core.mt5_connector            Connected: login=5049682276  name=Harshit Chaudhary  balance=5091.30 USD
+2026-05-13 12:16:10  INFO      bot.main                      ============================================================
+2026-05-13 12:16:10  INFO      bot.main                        XAUUSD Multi-Timeframe Sweep Reversal Bot  [LIVE]
+2026-05-13 12:16:10  INFO      bot.main                        Account : 5049682276  (Harshit Chaudhary)
+2026-05-13 12:16:10  INFO      bot.main                        Balance : 5091.30 USD
+2026-05-13 12:16:10  INFO      bot.main                        Entry TF: M1   |   Analysis TFs: M1, M5, M15, H1, H4
+2026-05-13 12:16:10  INFO      bot.main                        TF Rules:
+2026-05-13 12:16:10  INFO      bot.main                          M1    lookback=40   rr=1:1.5  priority=1
+2026-05-13 12:16:10  INFO      bot.main                          M5    lookback=30   rr=1:2.0  priority=2
+2026-05-13 12:16:10  INFO      bot.main                          M15   lookback=30   rr=1:3.0  priority=3
+2026-05-13 12:16:10  INFO      bot.main                          H1    lookback=20   rr=1:4.0  priority=4
+2026-05-13 12:16:10  INFO      bot.main                          H4    lookback=15   rr=1:5.0  priority=5
+2026-05-13 12:16:10  INFO      bot.main                        Max open trades : 2
+2026-05-13 12:16:10  INFO      bot.main                        Risk per trade  : 1.0%
+2026-05-13 12:16:10  INFO      bot.main                        Daily loss limit: 5.0%
+2026-05-13 12:16:10  INFO      bot.main                      ============================================================
+2026-05-13 12:16:10  INFO      bot.main                      Bot started. Waiting for first M1 candle close…
+2026-05-13 12:17:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:47:02 UTC ──────────────────────────────────
+2026-05-13 12:17:02  INFO      bot.main                      M1 close=4708.12  current=4708.18  open_trades=0/2
+2026-05-13 12:17:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:18:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:48:02 UTC ──────────────────────────────────
+2026-05-13 12:18:02  INFO      bot.main                      M1 close=4707.85  current=4708.22  open_trades=0/2
+2026-05-13 12:18:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:19:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:49:02 UTC ──────────────────────────────────
+2026-05-13 12:19:02  INFO      bot.main                      M1 close=4709.17  current=4709.33  open_trades=0/2
+2026-05-13 12:19:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:20:03  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:50:03 UTC ──────────────────────────────────
+2026-05-13 12:20:03  INFO      bot.main                      M1 close=4708.62  current=4708.76  open_trades=0/2
+2026-05-13 12:20:03  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:21:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:51:02 UTC ──────────────────────────────────
+2026-05-13 12:21:02  INFO      bot.main                      M1 close=4706.04  current=4706.46  open_trades=0/2
+2026-05-13 12:21:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:22:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:52:02 UTC ──────────────────────────────────
+2026-05-13 12:22:02  INFO      bot.main                      M1 close=4706.30  current=4706.33  open_trades=0/2
+2026-05-13 12:22:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:23:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:53:02 UTC ──────────────────────────────────
+2026-05-13 12:23:02  INFO      bot.main                      M1 close=4703.73  current=4704.34  open_trades=0/2
+2026-05-13 12:23:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:24:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:54:02 UTC ──────────────────────────────────
+2026-05-13 12:24:02  INFO      bot.main                      M1 close=4705.51  current=4705.51  open_trades=0/2
+2026-05-13 12:24:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:25:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:55:02 UTC ──────────────────────────────────
+2026-05-13 12:25:02  INFO      bot.main                      M1 close=4702.55  current=4702.64  open_trades=0/2
+2026-05-13 12:25:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…
+2026-05-13 12:26:02  INFO      bot.main                      ── M1 tick @ 2026-05-13 06:56:02 UTC ──────────────────────────────────
+2026-05-13 12:26:02  INFO      bot.main                      M1 close=4702.65  current=4702.84  open_trades=0/2
+2026-05-13 12:26:02  INFO      bot.main                      No sweep signal across M1/M5/M15/H1/H4. Watching…

@@ -1,0 +1,3 @@
+ticket,open_time,close_time,direction,lots,entry,sl,tp,close_px,pnl,result,source_tf,rr,description
+56623948577,2026-05-13 00:49:23,,LONG,0.25,4702.62,4700.62,4706.62,,,OPEN,DEBUG,2.0,[DEBUG] Executing LONG at current market price 4702.62
+56624022298,2026-05-13 00:55:49,,LONG,0.25,4704.54,4702.54,4708.54,,,OPEN,DEBUG,2.0,[DEBUG] Executing LONG at current market price 4704.54
