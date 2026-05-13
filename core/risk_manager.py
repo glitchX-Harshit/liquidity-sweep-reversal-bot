@@ -48,6 +48,29 @@ class RiskManager:
             return False
         return True
 
+    # ── Max Trades Guard ──────────────────────────────────────────────────────
+    def is_max_trades_reached(self) -> bool:
+        if self.cfg.MAX_TRADES_PER_DAY is None:
+            return False
+            
+        from datetime import datetime
+        today = datetime.now()
+        start_of_day = datetime(today.year, today.month, today.day)
+        
+        deals = mt5.history_deals_get(start_of_day, today)
+        if deals is None:
+            return False
+            
+        # Count entry deals for our magic number
+        entry_deals = [d for d in deals if d.magic == self.cfg.MAGIC_NUMBER and d.entry == mt5.DEAL_ENTRY_IN]
+        count = len(entry_deals)
+        
+        if count >= self.cfg.MAX_TRADES_PER_DAY:
+            logger.warning("Max trades per day reached (%d/%d)", count, self.cfg.MAX_TRADES_PER_DAY)
+            return True
+            
+        return False
+
     # ── Open trade gate ───────────────────────────────────────────────────────
     def can_open_trade(self) -> bool:
         """
@@ -55,12 +78,16 @@ class RiskManager:
           - daily loss limit exceeded
           - spread too wide
           - already at MAX_OPEN_TRADES (2) positions
+          - already hit MAX_TRADES_PER_DAY
         If we already have 2 trades open, analysis is paused until one closes.
         """
         if self.is_daily_loss_exceeded():
             return False
         if not self.is_spread_ok():
             return False
+        if self.is_max_trades_reached():
+            return False
+            
         open_trades = self.conn.get_open_positions(
             symbol=self.cfg.SYMBOL, magic=self.cfg.MAGIC_NUMBER
         )

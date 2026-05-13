@@ -21,22 +21,23 @@ MTF_CONFIG = {
     "M1"  : {"lookback": 40, "rr": 1.5, "priority": 1},
     "M5"  : {"lookback": 30, "rr": 2.0, "priority": 2},
     "M15" : {"lookback": 30, "rr": 3.0, "priority": 3},
-    "H1"  : {"lookback": 20, "rr": 4.0, "priority": 4},
+    "H1"  : {"lookback": 20, "rr": 6.0, "priority": 4},
     "H4"  : {"lookback": 15, "rr": 5.0, "priority": 5},
 }
 
 # Analysis timeframes in priority order (lowest → highest)
-ANALYSIS_TIMEFRAMES = ["M1", "M5", "M15", "H1", "H4"]
+ANALYSIS_TIMEFRAMES = ["H1"]
 
 # ── Risk Management ───────────────────────────────────────────
-RISK_PERCENT        = 1.0     # % of account balance risked per trade
+RISK_PERCENT        = 0.5     # % of account balance risked per trade
 MAX_DAILY_LOSS_PCT  = 5.0     # Bot pauses if daily drawdown hits this
 MAX_OPEN_TRADES     = 2       # Max concurrent positions (across all TFs)
+MAX_TRADES_PER_DAY  = 6       # Max total trades per day (None = unlimited)
 MIN_LOT             = 0.01
 MAX_LOT             = 5.0
 
 # ── Sweep Detection ───────────────────────────────────────────
-SWEEP_BUFFER_PIPS   = 1       # Min pips beyond high/low to count as sweep
+SWEEP_BUFFER_PIPS   = 40      # Min pips beyond high/low to count as sweep
 REJECTION_BODY_PCT  = 0.60    # Max body/range ratio (0.60 = relaxed)
 MIN_SWEEP_WICK_PCT  = 0.25    # Min wick/range ratio (0.25 = catches minor sweeps)
 

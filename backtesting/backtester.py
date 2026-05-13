@@ -32,27 +32,31 @@ class Backtester:
         self.positions = []
         self.trades_history = []
         
-    def _get_closed_candles(self, tf_name, current_time_m1_close):
+    def _get_closed_candles(self, tf_name, current_time_close):
         """
-        Returns an array of candles that have fully closed by current_time_m1_close.
+        Returns an array of candles that have fully closed by current_time_close.
+        Optimized with an internal pointer to avoid O(N^2) searching.
         """
+        if not hasattr(self, 'tf_pointers'):
+            self.tf_pointers = {tf: 0 for tf in self.config.ANALYSIS_TIMEFRAMES}
+            
         arr = self.data_dict[tf_name]
         tf_duration = TF_DURATIONS[tf_name]
+        idx = self.tf_pointers[tf_name]
         
-        # A candle is closed if its open time + its duration <= current M1 close time
-        # Example: M5 opens at 12:00, duration 300s. Closes at 12:05.
-        # If current M1 closed at 12:05, M5 is closed.
-        closed_mask = (arr['time'] + tf_duration) <= current_time_m1_close
-        
-        return arr[closed_mask]
+        while idx < len(arr) and (arr[idx]['time'] + tf_duration) <= current_time_close:
+            idx += 1
+            
+        self.tf_pointers[tf_name] = idx
+        return arr[:idx]
 
-    def _get_tf_candles_dict(self, m1_close_time):
+    def _get_tf_candles_dict(self, current_time_close):
         """Builds the dictionary of np arrays expected by sweep_detector"""
         tf_candles = {}
         for tf_name in self.config.ANALYSIS_TIMEFRAMES:
             if tf_name not in self.data_dict: continue
             
-            closed = self._get_closed_candles(tf_name, m1_close_time)
+            closed = self._get_closed_candles(tf_name, current_time_close)
             
             # The detector expects lookback + a few extra bars.
             lookback = self.config.MTF_CONFIG[tf_name]["lookback"]
@@ -63,60 +67,67 @@ class Backtester:
 
     def run(self):
         if "M1" not in self.data_dict:
-            logger.error("M1 data is required for backtesting simulation.")
+            logger.error("M1 data is missing. It is strictly required for highly-accurate tick-level backtesting simulation.")
             return pd.DataFrame()
             
-        m1_data = self.data_dict["M1"]
-        total_candles = len(m1_data)
-        logger.info(f"Starting backtest over {total_candles} M1 candles...")
+        base_tf = "M1"
+        base_data = self.data_dict[base_tf]
+        base_duration = TF_DURATIONS[base_tf]
+        total_candles = len(base_data)
+        logger.info(f"Starting backtest over {total_candles} {base_tf} candles...")
+        
+        current_day = None
+        trades_today = 0
         
         for i in range(total_candles):
-            current_m1 = m1_data[i]
-            m1_open_time = current_m1['time']
-            m1_close_time = m1_open_time + 60
+            current_base = base_data[i]
+            base_open_time = current_base['time']
+            base_close_time = base_open_time + base_duration
             
-            current_price = float(current_m1['close']) # Use M1 close as current price for the tick
+            # Date tracking for max trades per day limit
+            current_date = datetime.utcfromtimestamp(base_open_time).date()
+            if current_day != current_date:
+                current_day = current_date
+                trades_today = 0
             
-            # Monitor open positions for SL/TP hits using current M1 candle (intra-bar simulation)
-            # High/Low of M1 are used to check if SL/TP hit during this minute
+            current_price = float(current_base['close'])
+            
+            # Monitor open positions for SL/TP hits using current base candle (intra-bar simulation)
             for pos in self.positions[:]:
-                outcome = self.execution_engine.simulate_tp_sl(pos, current_m1)
+                outcome = self.execution_engine.simulate_tp_sl(pos, current_base)
                 if outcome:
-                    self._close_position(pos, outcome, current_m1)
+                    self._close_position(pos, outcome, current_base)
             
             # Check if we can open new positions
             if len(self.positions) >= self.config.MAX_OPEN_TRADES:
                 continue
                 
+            if self.config.MAX_TRADES_PER_DAY is not None and trades_today >= self.config.MAX_TRADES_PER_DAY:
+                continue
+                
             # Construct multi-tf context without lookahead bias
-            tf_candles = self._get_tf_candles_dict(m1_close_time)
+            tf_candles = self._get_tf_candles_dict(base_close_time)
             
             # Multi-TF Sweep analysis
             signal = self.detector.analyse(tf_candles, current_price)
             if signal:
                 actual_entry = self.execution_engine.simulate_execution(
                     signal, 
-                    current_m1, 
+                    current_base, 
                     self.use_spread, 
                     self.use_slippage
                 )
                 
                 if actual_entry is not None:
-                    # Calculate position size (simplified risk based on distance)
                     sl_dist = abs(actual_entry - signal.stop_loss)
                     if sl_dist > 0:
                         risk_amount = self.balance * (self.config.RISK_PERCENT / 100)
-                        # Assume 1 standard lot = 100,000 units. XAUUSD 1 pip = $0.10 for 0.01 lot.
-                        # Wait, standard MT5 lot calculation:
-                        # 1 lot XAUUSD = 100 oz. 1 point ($0.01) move = $1.
-                        # Risk Amount = Volume * ContractSize * SL_Points * PointValue
-                        # Simplified: 
-                        volume = risk_amount / (sl_dist * 100) # Assuming contract size 100
+                        volume = risk_amount / (sl_dist * 100)
                         volume = max(self.config.MIN_LOT, min(self.config.MAX_LOT, round(volume, 2)))
                         
                         self.positions.append({
                             'id': len(self.trades_history) + len(self.positions) + 1,
-                            'entry_time': m1_close_time,
+                            'entry_time': base_close_time,
                             'direction': signal.direction,
                             'source_tf': signal.source_tf,
                             'entry': actual_entry,
@@ -124,18 +135,18 @@ class Backtester:
                             'tp': signal.take_profit,
                             'rr': signal.rr,
                             'volume': volume,
-                            'spread': current_m1['spread']
+                            'spread': current_base['spread']
                         })
-                        # logger.debug(f"Opened {signal.direction} on {signal.source_tf} at {actual_entry}")
+                        trades_today += 1
 
             if i % 50000 == 0 and i > 0:
                 logger.info(f"Processed {i}/{total_candles} candles... Balance: ${self.balance:.2f}")
 
         # Close any remaining open positions at the end of the data
         if len(self.positions) > 0:
-            last_m1 = m1_data[-1]
+            last_base = base_data[-1]
             for pos in self.positions[:]:
-                self._close_position(pos, 'END_OF_DATA', last_m1)
+                self._close_position(pos, 'END_OF_DATA', last_base)
                 
         logger.info(f"Backtest completed. Final Balance: ${self.balance:.2f}")
         return pd.DataFrame(self.trades_history)
