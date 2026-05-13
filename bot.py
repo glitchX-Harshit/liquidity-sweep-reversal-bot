@@ -66,16 +66,20 @@ def _sleep_to_next_m1():
 # ── Banner ────────────────────────────────────────────────────────────────────
 def _banner(acc: dict, dry_run: bool):
     mode = "DRY-RUN" if dry_run else "LIVE"
+    active_tfs = ", ".join(config.ANALYSIS_TIMEFRAMES)
     logger.info("=" * 60)
     logger.info("  XAUUSD Multi-Timeframe Sweep Reversal Bot  [%s]", mode)
     logger.info("  Account : %s  (%s)", acc.get("login"), acc.get("name"))
     logger.info("  Balance : %.2f %s", acc.get("balance", 0), acc.get("currency", ""))
-    logger.info("  Entry TF: M1   |   Analysis TFs: M1, M5, M15, H1, H4")
+    logger.info("  Entry TF: M1   |   Analysis TFs: %s", active_tfs)
     logger.info("  TF Rules:")
-    for tf, cfg_tf in config.MTF_CONFIG.items():
-        logger.info("    %-4s  lookback=%-3d  rr=1:%.1f  priority=%d",
-                    tf, cfg_tf["lookback"], cfg_tf["rr"], cfg_tf["priority"])
+    for tf in config.ANALYSIS_TIMEFRAMES:
+        if tf in config.MTF_CONFIG:
+            cfg_tf = config.MTF_CONFIG[tf]
+            logger.info("    %-4s  lookback=%-3d  rr=1:%.1f  priority=%d",
+                        tf, cfg_tf["lookback"], cfg_tf["rr"], cfg_tf["priority"])
     logger.info("  Max open trades : %d", config.MAX_OPEN_TRADES)
+    logger.info("  Max trades/day  : %s", config.MAX_TRADES_PER_DAY)
     logger.info("  Risk per trade  : %.1f%%", config.RISK_PERCENT)
     logger.info("  Daily loss limit: %.1f%%", config.MAX_DAILY_LOSS_PCT)
     logger.info("=" * 60)
@@ -144,7 +148,8 @@ def run(dry_run: bool = False):
             signal = detector.analyse(tf_candles, m1_price)
 
             if signal is None:
-                logger.info("No sweep signal across M1/M5/M15/H1/H4. Watching…")
+                active_tfs_str = "/".join(config.ANALYSIS_TIMEFRAMES)
+                logger.info(f"No sweep signal across {active_tfs_str}. Watching…")
                 continue
 
             logger.info(
