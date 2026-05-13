@@ -33,37 +33,54 @@ MT5_PASSWORD = "your_password"
 MT5_SERVER   = "YourBroker-Live"
 ```
 
-## Run
+## Historical Backtesting Engine
 
+The bot includes a full-featured local historical backtesting pipeline. It reuses the exact same logic as the live bot to ensure consistency between simulation and execution.
+
+### Key Features:
+- **Event-Driven Simulation**: Replays market candle-by-candle (M1).
+- **Realistic Execution**: Simulates spread, slippage, and TP/SL hits intra-bar.
+- **No Lookahead Bias**: Strictly enforces that only closed candles from higher TFs are used.
+- **Quant Analytics**: Generates detailed metrics (Sharpe, Drawdown, Profit Factor, etc.).
+- **Visual Reporting**: Produces an HTML report with equity curves, monthly returns, and trade distributions.
+
+### How to Run:
 ```bash
-python bot.py              # Live
-python bot.py --dry-run    # Paper trade
-python bot.py --summary    # Show stats
-```
+# Run a 1-year backtest with visualizations and HTML report
+python backtest.py --years 1 --visualize --export-report
 
-## Tuning Sweeps (config.py)
-
-```python
-SWEEP_BUFFER_PIPS  = 1     # 1 pip = catches even tiny sweeps
-MIN_SWEEP_WICK_PCT = 0.25  # 25% wick minimum (very relaxed)
-REJECTION_BODY_PCT = 0.60  # up to 60% body allowed
+# Options:
+# --years [N]      : Set historical period (default: 1)
+# --visualize      : Generate charts (PNGs) in reports/
+# --export-report  : Generate HTML report and trade CSV in reports/
 ```
 
 ## Project Structure
 
 ```
 xauusd_sweep_bot/
-├── bot.py                  # Main loop (M1 clock, MTF analysis, 2-trade gate)
-├── config.py               # All settings — MTF_CONFIG, credentials, risk params
+├── bot.py                  # Main live runner (M1 clock, MTF analysis)
+├── backtest.py             # CLI entry for the backtesting engine
+├── config.py               # All settings (MTF_CONFIG, credentials, risk params)
 ├── requirements.txt
+├── backtesting/            # Backtesting Engine Modules
+│   ├── historical_data.py  # MT5 data downloader and cache manager
+│   ├── backtester.py       # Event-driven simulation engine
+│   ├── execution_engine.py # Realistic trade execution simulation
+│   ├── metrics.py          # Quant stats (Sharpe, MaxDD, Winrate)
+│   ├── visualizer.py       # Matplotlib chart generation
+│   └── report_generator.py # HTML and CSV report exports
 ├── core/
 │   ├── mt5_connector.py    # MT5 API wrapper + multi-TF candle fetcher
-│   ├── sweep_detector.py   # MultiTFSweepDetector — scans M1/M5/M15/H1/H4
+│   ├── sweep_detector.py   # MultiTFSweepDetector — shared by live/backtest
 │   ├── risk_manager.py     # Lot sizing, daily loss, spread, 2-trade gate
 │   └── trade_executor.py   # Order placement + position monitoring
-└── utils/
-    ├── trade_logger.py     # CSV log with source_tf and rr per trade
-    └── logger_setup.py     # Rotating file logger
+├── utils/
+│   ├── trade_logger.py     # CSV log with source_tf and rr per trade
+│   └── logger_setup.py     # Rotating file logger
+├── data/                   # Cached historical CSVs
+├── reports/                # Backtest results and charts
+└── logs/                   # Live trading logs
 ```
 
 ## Notes
